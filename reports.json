@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "chess-rapid-road-to-1100",
+      "title": "lsc4719 — 래피드 1100을 향한 대국 분석",
+      "summary": "최근 래피드 379국과 실전 전술 사례로 정리한 1011→1100 훈련 계획.",
+      "date": "2026-11-20",
+      "path": "./reports/chess-rapid-road-to-1100/"
+    },
+    {
       "slug": "spring-start-here-chapter-7",
       "title": "Spring Start Here - 7장 핵심 정리",
       "summary": "웹 앱의 구조부터 Spring Boot의 기본값, Spring MVC 요청 흐름까지 한 번에 연결합니다.",
