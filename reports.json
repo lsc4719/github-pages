@@ -1,0 +1,11 @@
+{
+  "reports": [
+    {
+      "slug": "spring-start-here-chapter-7",
+      "title": "Spring Start Here - 7장 핵심 정리",
+      "summary": "웹 앱의 구조부터 Spring Boot의 기본값, Spring MVC 요청 흐름까지 한 번에 연결합니다.",
+      "date": "2026-11-19",
+      "path": "./reports/spring-start-here-chapter-7/"
+    }
+  ]
+}
