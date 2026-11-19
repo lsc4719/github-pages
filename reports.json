@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "korea-coffee-bag-market-review",
+      "title": "한국 커피 원두 봉투 업체 조사 및 개선방향",
+      "summary": "소프트팩의 선도기업 근거와 1위 검증 한계, 경쟁사 비교 및 제품·주문 경험의 90일 개선 계획.",
+      "date": "2026-11-20",
+      "path": "./reports/korea-coffee-bag-market-review/"
+    },
+    {
       "slug": "samsung-gentle-monster-low-vision",
       "title": "저시력 사용자를 위한 삼성·젠틀몬스터 스마트 글래스 평가",
       "summary": "공식 출시 정보, 글 읽기·물건 찾기의 기대와 한계, 렌즈·설정 접근성 및 구매 전 체험 체크리스트.",
