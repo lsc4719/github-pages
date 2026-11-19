@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "rickywasyoung-rapid-road-to-1100",
+      "title": "rickywasyoung — 래피드 1100을 향한 대국 분석",
+      "summary": "최근 래피드 55국으로 분석한 흑 기물 안전, 시간 배분과 1004→1100 훈련 계획.",
+      "date": "2026-11-20",
+      "path": "./reports/rickywasyoung-rapid-road-to-1100/"
+    },
+    {
       "slug": "chess-rapid-road-to-1100",
       "title": "lsc4719 — 래피드 1100을 향한 대국 분석",
       "summary": "최근 래피드 379국과 실전 전술 사례로 정리한 1011→1100 훈련 계획.",
