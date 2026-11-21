@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "rapid-tactics-integrated-review",
+      "title": "lsc4719 — 래피드·전술 통합 학습 진단",
+      "summary": "Chess.com 래피드 379국과 Chess King 성공률 94%를 종합한 전술·실전 학습 및 4주 훈련 계획.",
+      "date": "2026-11-22",
+      "path": "./reports/rapid-tactics-integrated-review/"
+    },
+    {
       "slug": "korea-coffee-bag-market-review",
       "title": "한국 커피 원두 봉투 업체 조사 및 개선방향",
       "summary": "소프트팩의 선도기업 근거와 1위 검증 한계, 경쟁사 비교 및 제품·주문 경험의 90일 개선 계획.",
