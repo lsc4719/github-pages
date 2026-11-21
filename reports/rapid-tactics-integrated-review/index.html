@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lsc4719 — 래피드·전술 통합 학습 진단</title>
+<meta name="description" content="Chess.com 래피드 379국 분석과 Chess King 전술 학습 통계를 결합한 훈련 보고서">
+<style>
+:root{color-scheme:light;--bg:#f3f6fb;--paper:#fff;--ink:#17283d;--sub:#576a80;--line:#d9e3ef;--accent:#315fce;--green:#19766a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:980px;margin:auto;padding:30px 16px 80px}a{color:var(--accent);overflow-wrap:anywhere}a:focus-visible{outline:3px solid orange;outline-offset:3px}
+.hero{background:#14283f;color:#fff;border-radius:24px;padding:38px 30px}.hero h1{font-size:clamp(2rem,5.5vw,3.4rem);line-height:1.17;margin:10px 0}.hero p{color:#e0eaf7}.eyebrow{font-size:.8rem;letter-spacing:.13em;color:#b3d3ff;font-weight:800}
+section{margin-top:20px;padding:28px;background:var(--paper);border:1px solid var(--line);border-radius:20px}h2{font-size:1.5rem;margin:0 0 16px;line-height:1.25}h3{font-size:1.13rem;margin:20px 0 7px}.muted,small{color:var(--sub)}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.metric{padding:16px;background:#f4f8fd;border:1px solid var(--line);border-radius:14px}.metric strong{display:block;font-size:1.7rem;color:var(--green);line-height:1.25}.metric span{font-size:.9rem;color:var(--sub)}.callout{background:#edf4fe;border-left:4px solid var(--accent);padding:16px 20px;border-radius:8px}.warn{background:#fff6e7;border-left:4px solid #be882b;padding:13px 17px;border-radius:8px}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:570px;font-size:.95rem}th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:12px}th{background:#eff4fb}.columns{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{background:#f7f9fd;border:1px solid var(--line);padding:18px;border-radius:14px}li{margin:5px 0}code{overflow-wrap:anywhere;font-size:.92em}footer{padding:30px 5px;color:var(--sub);font-size:.9rem}
+@media(max-width:700px){.cards,.columns{grid-template-columns:1fr 1fr}section{padding:22px 18px}.hero{padding:27px 21px}}
+@media(max-width:430px){.cards,.columns{grid-template-columns:1fr}}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#0d1826;--paper:#18283a;--ink:#eaf1fa;--sub:#b7c6da;--line:#35495f;--accent:#98baff;--green:#96dbd0}.metric,.panel{background:#213348}th{background:#25384b}.callout{background:#233b56}.warn{background:#49391e}}
+</style></head><body><main>
+<p><a href="../../">← 보고서 목록</a></p>
+<header class="hero"><div class="eyebrow">CHESS PERFORMANCE / LEARNING REPORT</div><h1>전술 문제는 잘 푼다.<br>실전에서는 왜 놓칠까?</h1><p>Chess.com <strong>lsc4719</strong>의 래피드 대국 기록과 Chess King 「초보자를 위한 체스 전술」 학습 통계를 종합한 개인 훈련 진단.</p><p><small style="color:#bfcfe3">2026년 11월 22일 · 기존 PGN 분석 기준 11월 20일 · Chess King 사용자 화면 자료</small></p></header>
+<section><h2>01. 요약 진단</h2><div class="cards">
+<div class="metric"><strong>379국</strong><span>기존 11월 래피드 분석 표본</span></div>
+<div class="metric"><strong>50.8%</strong><span>379국 득점률</span></div>
+<div class="metric"><strong>94%</strong><span>Chess King 표시 성공률</span></div>
+<div class="metric"><strong>1분 02초</strong><span>Chess King 평균 풀이 시간</span></div></div>
+<p class="callout"><strong>한 줄 결론:</strong> 기본 전술 문제를 해결하는 능력은 좋다. 그러나 실전 기보에서는 상대의 체크·나이트 포크·열린 공격선을 즉시 인식하지 못해 큰 손해를 보는 사례가 확인된다. 어려운 전술을 무작정 추가하기보다 <strong>상대 위협 식별 + 강제수 계산 + 실전 복기</strong>를 연결하는 것이 우선이다.</p>
+<p class="warn">데이터 해석 한계: 이 보고서는 기존 GitHub Pages에 게시된 379국 분석을 재사용한다. 이번 작성 시점에 Chess.com 최신 대국을 다시 전량 다운로드하거나 체스 엔진으로 전 수순을 재평가한 것은 아니다. 따라서 블런더율, ACPL, 정확도, 최신 레이팅은 산출하지 않았다.</p></section>
+<section><h2>02. 래피드 성적과 실전 습관</h2><p><a href="../chess-rapid-road-to-1100/">2026-11-20 기존 래피드 보고서</a>는 Chess.com 공개 PGN·결과·시계 데이터로 2026년 11월 379국을 분석했다. 그 시점 기록을 사용하면 다음과 같다.</p>
+<div class="scroll"><table><thead><tr><th>구간</th><th>승 / 패 / 무</th><th>득점률</th><th>코칭 해석</th></tr></thead><tbody>
+<tr><td>11월 전체 (379국)</td><td>183 / 177 / 19</td><td>50.8%</td><td>균형에 가까운 승패</td></tr>
+<tr><td>백 (191국)</td><td>95 / 86 / 10</td><td>52.4%</td><td>흑보다 약간 높음</td></tr>
+<tr><td>흑 (188국)</td><td>88 / 91 / 9</td><td>49.2%</td><td>흑 대응 복기 우선</td></tr>
+<tr><td>당시 최근 50국</td><td>28 / 21 / 1</td><td>57.0%</td><td>긍정적 신호지만 추세 확정 불가</td></tr>
+</tbody></table></div>
+<h3>시간패: 단순한 전술 실수와 별개로 관리 필요</h3><p>177패 가운데 시간패 27국(15.3%), 체크메이트패 38국, 기권패 112국이었다. 흑 시간패는 18국, 백 9국이었다. 당시 대국은 모두 10분 무증분(10+0)이었다. 시간패를 모두 승리 가능했던 경기로 간주할 수는 없지만, <strong>흑에서 불리한 시간 운영</strong>은 점검할 근거가 있다.</p>
+<h3>대국량: 복기 가능한 만큼 줄이기</h3><p>기존 기록에는 하루 54국·46국·38국처럼 많은 경기를 둔 날이 있었다. 이것이 패배를 유발했다고 입증되는 것은 아니지만 그 정도 대국량을 깊게 복기하기는 어렵다. 15+10 래피드로 하루 1~2국, 각 대국에서 최소 한 번 놓친 위협을 찾아 기록하는 방법을 권장한다.</p></section>
+<section><h2>03. 기보에서 확인한 구체적 전술 사례</h2>
+<div class="panel"><h3>사례 A — 체크와 나이트 포크 누락</h3><p><strong>vs vikranthb72 · 흑 · 2026-11-19</strong></p><p><code>10...Bg4 11.Bxh6 gxh6 12.Nf6+ Kg7 13.Nxd5</code></p><p>상대 나이트의 <strong>Nf6+</strong>가 킹을 체크하면서 d5의 퀸까지 동시에 공격했다. 11...gxh6를 약 1.7초 만에 두었다는 PGN 시계 기록이 있다. 이 장면은 '상대가 체크로 무엇을 노리는가?'를 되잡기 전 먼저 확인하는 습관이 필요한 사례다.</p><p><strong>훈련:</strong> 나이트 포크 5문제/일 + 실전에서 모든 체크 후보를 1회 열거.</p></div>
+<div class="panel" style="margin-top:14px"><h3>사례 B — 희생을 받다가 퀸 손실</h3><p><strong>vs JustNick150 · 흑 · 2026-11-18</strong></p><p><code>5...e5 6.Nxf7 Kxf7 7.Bg6+ hxg6 8.Qxd8</code></p><p>나이트와 비숍 희생 이후 d파일을 통해 퀸이 잡혔다. 희생을 받는 순간에는 바로 되잡을지보다 상대의 연속 체크와 다음 잡기를 수읽기로 검증해야 한다.</p><p><strong>훈련:</strong> '상대의 체크 → 내 응수 → 상대의 다음 잡기' 세 단계 계산.</p></div>
+<div class="panel" style="margin-top:14px"><h3>사례 C — 폰을 잡다 룩·백랭크 붕괴</h3><p><strong>vs thiru222 · 백 · 2026-11-18</strong></p><p><code>17.Rad1 Rab8 18.Qxc7 Bxd1 19.Rxd1 Rxb2 20.Nc4 Qxd1#</code></p><p>18.Qxc7 이후 흑 비숍의 대각선 공격으로 d1 룩이 잡혔고, 이어 백랭크 메이트가 나왔다. 폰 획득 전 자신이 보호받고 있다고 생각하는 룩과 킹 탈출 칸을 다시 확인해야 한다.</p><p><strong>훈련:</strong> 백랭크 메이트, 열린 대각선, 루스 피스(방어 부족 기물) 문제.</p></div>
+<p class="muted">세 장면은 기존 보고서에서 선별한 사례다. 전체 379국의 전술 오류 빈도를 대표하는 통계는 아니며 엔진 최선수 판정도 아니다.</p></section>
+<section><h2>04. Chess King 전술 학습 결과와 비교</h2>
+<div class="scroll"><table><thead><tr><th>사용자 화면 지표</th><th>값</th><th>의미</th></tr></thead><tbody>
+<tr><td>코스 진도</td><td>33.3%</td><td>아직 충분한 문제가 남아 있음</td></tr>
+<tr><td>앱 표시 누적 문제</td><td>1,268개</td><td>통계 화면의 주제 내 과제 수</td></tr>
+<tr><td>앱 표시 성공률</td><td>94%</td><td>학습 수행 양호. 첫 시도 정답률 여부는 불명확</td></tr>
+<tr><td>문제당 평균 시간</td><td>1:02</td><td>기본 패턴은 비교적 익숙할 가능성</td></tr>
+<tr><td>앱 표시 총 시간</td><td>07:22:22</td><td>집계 방법과 항목 사이 차이는 확인 필요</td></tr>
+<tr><td>최고 / 최약 하위 주제</td><td>1.1 룩 체크메이트 / 2.3 나이트 획득</td><td>기물 획득 전술은 점검할 후보이나 주제별 정답률 미확인</td></tr>
+</tbody></table></div><p>화면의 총 과제 수·총 시간·문제당 평균 시간은 서로 단순히 곱셈으로 일치하지 않으므로 별도 집계 기준이 적용되었을 수 있다. 여기서는 앱 표시값을 그대로 인용했다.</p>
+<p class="callout"><strong>핵심 간극:</strong> 전술 문제가 있다고 알고 푸는 환경과 실전에서 상대의 전술이 있다는 사실부터 발견해야 하는 환경은 다르다. 포크 해법을 아는 것뿐 아니라 상대도 포크를 걸 수 있다는 점을 매 수 확인해야 한다.</p></section>
+<section><h2>05. 다음 Chess King 코스 구매 판단</h2><div class="columns">
+<div class="panel"><h3>지금: 현재 코스 완주</h3><p>남은 「초보자를 위한 체스 전술」을 진행하되 힌트·재시도 없이 맞힌 비율을 별도로 기록한다. 틀린 문제는 48시간 후 재도전한다.</p></div>
+<div class="panel"><h3>그다음: 난이도 시험 후 구매</h3><p><strong>Chess Tactics Art 1400–1600</strong> 체험문제 30~50개를 먼저 풀어본다. 힌트 없이 대략 70~85%를 맞히면 적당한 도전 난도다.</p></div>
+</div><p><strong>Elementary Chess Tactics 2</strong>는 수비수 제거·유인·차단 등의 특정 모티프가 약할 때 우선한다. <strong>CT-ART 4.0 (1200–2400)</strong>은 난도 폭이 커 현재의 메인 교재로 곧장 구매하기보다 쉬운 단계부터 시험하는 편이 좋다. 코스 표기의 ELO와 Chess.com 래피드 레이팅은 정확히 같은 척도가 아니다.</p></section>
+<section><h2>06. 4주 훈련 계획 (래피드 1000대 → 1100/1200)</h2>
+<div class="scroll"><table><thead><tr><th>기간</th><th>집중</th><th>실행</th><th>기록</th></tr></thead><tbody>
+<tr><td>1주차</td><td>체크·포크 방어</td><td>현재 코스 10~15문제/일 + 15+10 대국 1국</td><td>상대의 체크를 못 본 순간</td></tr>
+<tr><td>2주차</td><td>희생과 강제수</td><td>되잡기 전에 3수 계산; 오답 48시간 뒤 다시 풀기</td><td>희생 수용 후 기물 손실</td></tr>
+<tr><td>3주차</td><td>백랭크·열린 선</td><td>백랭크/핀/루스 피스 연습 + 흑 대국 우선 복기</td><td>퀸·룩 손실과 시간패</td></tr>
+<tr><td>4주차</td><td>실전 검증</td><td>같은 시간제 최근 20~30국 검토</td><td>시간패율, 포크 누락, 오답 재풀이</td></tr>
+</tbody></table></div>
+<h3>하루 45~60분 예시</h3><ol><li><strong>10~15분</strong> Chess King 전술. 처음에는 움직이지 말고 최선의 응수까지 계산.</li><li><strong>20~30분</strong> 15+10 래피드 한 판. 긴 대국이면 훈련 시간을 유연하게 연장.</li><li><strong>10~15분</strong> 엔진 없이 먼저 복기: 상대 위협을 놓친 첫 수 찾기. 이후 엔진으로 확인.</li></ol>
+<p class="note"><strong>매 수 안전 확인:</strong> 상대의 마지막 수가 연 공격선은? → 상대의 체크·잡기·위협은? → 내 후보 수에 대한 상대의 가장 강한 응수는? → 내가 옮기는 기물이 기존에 지키던 것은?</p></section>
+<section><h2>07. 성공 기준과 재평가 계획</h2><ul><li><strong>레이팅:</strong> 1100 돌파 자체보다 20~30국 동안 실수를 줄이고 유지하는지 확인.</li><li><strong>시간패:</strong> 동일 시간제 최근 30국에서 1국 이하를 실험적 목표로 설정. 기존 10+0과 신규 15+10 결과는 직접 동일 비교하지 않기.</li><li><strong>전술:</strong> 오답 재풀이 시 80% 이상을 힌트 없이 재현하는 것을 목표로 삼기.</li><li><strong>실전:</strong> 한 판마다 '상대의 체크/잡기/포크를 놓친 수'를 최소 하나 점검.</li><li><strong>재평가:</strong> 같은 기준으로 30국을 모은 뒤 약점을 다시 분류하고 다음 교재를 결정.</li></ul></section>
+<section><h2>08. 자료·방법·한계</h2><p><strong>실전 출처:</strong> <a href="../chess-rapid-road-to-1100/">기존 lsc4719 래피드 379국 분석(2026-11-20)</a>. 해당 보고서는 <a href="https://www.chess.com/news/view/published-data-api">Chess.com 공개 데이터 API</a>와 당시 PGN의 결과·수순·시계를 근거로 작성되었다.</p><p><strong>전술 출처:</strong> 이 대화에서 사용자가 제공한 Chess King 두 스크린샷(코스 진행 화면·통계 화면) 및 래피드 1000대라는 설명.</p><p><strong>방법:</strong> 이미 집계된 성적과 선별된 세 개의 PGN 장면을 학습 통계와 대조해 코칭 가설과 4주 계획을 제안했다.</p><p><strong>하지 않은 것:</strong> 새로운 379국 엔진 재분석, 현재 전체 대국 및 최신 레이팅 재조회, 최초 시도 성공률 확정, 문제집 구매 후 성과 예측.</p><p>보고서는 코칭 가이드다. 수치로 확인된 사실, 선택 사례, 권고안을 구분해 읽어야 한다.</p></section>
+<footer>작성일: 2026-11-22 · <a href="https://www.chess.com/member/lsc4719">Chess.com 프로필</a> · <a href="../chess-rapid-road-to-1100/">이전 분석 보고서</a> · <a href="../../">보고서 목록</a></footer>
+</main></body></html>
