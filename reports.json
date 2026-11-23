@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "police-exam-study-guide",
+      "title": "경찰공무원 시험, 무엇부터 어떻게 준비할까",
+      "summary": "순경 일반공채의 시험 정보·2026년 제도 변화, 과목별 공부법과 24주 계획, 체력·면접 준비 체크리스트.",
+      "date": "2026-11-24",
+      "path": "./reports/police-exam-study-guide/"
+    },
+    {
       "slug": "backend-study-plan",
       "title": "다시 진도가 나가는 백엔드 공부 계획",
       "summary": "현재 진도에서 출발해 주 3시간, 같은 API로 Spring·PostgreSQL·트랜잭션을 연결하는 8주 계획과 재시작 규칙.",
