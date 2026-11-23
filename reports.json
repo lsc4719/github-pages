@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "chess-engine-content-review",
+      "title": "lsc4719 — 엔진으로 본 1100대 경기 내용",
+      "summary": "Stockfish 19로 109국을 비교하고 대표 6장면을 심화 분석. 실전 수·더 나은 수·체스판·복기 과제.",
+      "date": "2026-11-23",
+      "path": "./reports/chess-engine-content-review/"
+    },
+    {
       "slug": "chess-rapid-1100-breakthrough",
       "title": "lsc4719 — 왜 갑자기 래피드 1100대가 되었을까",
       "summary": "1011→1103, 추가 53국의 29승·6무·18패와 6연승, 시간패 감소로 살펴본 상승의 근거와 유지 과제.",
