@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "art-date-seoul-2026",
+      "title": "이번 데이트는, 오키프부터 — 서울·과천 전시 추천",
+      "summary": "오키프·현대미술 취향을 반영한 첫 선택은 과천 오키프 전시. 서도호·리움 대안, 데이트 코스와 공식 관람정보.",
+      "date": "2026-11-23",
+      "path": "./reports/art-date-seoul-2026/"
+    },
+    {
       "slug": "rapid-tactics-integrated-review",
       "title": "lsc4719 — 래피드·전술 통합 학습 진단",
       "summary": "Chess.com 래피드 379국과 Chess King 성공률 94%를 종합한 전술·실전 학습 및 4주 훈련 계획.",
@@ -44,3 +51,4 @@
     }
   ]
 }
+
