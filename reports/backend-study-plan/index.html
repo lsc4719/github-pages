@@ -12,11 +12,40 @@
 @media(max-width:30rem){h1{font-size:1.75rem;margin:.7rem 0 .6rem}.masthead span{display:none}.hero-inner{padding-top:.2rem}.hero .lead{font-size:1.125rem}.hero .meta{margin:.5rem 0}.today{margin:.7rem 0 0;padding:.25rem 0 .25rem .7rem}.today p{font-size:1rem}.nav-inner{gap:1.5rem}main>section{padding:1.5rem 0}.week{padding:1rem 0}.week-head{align-items:start;gap:.6rem}.week-head h3{font-size:1.25rem}.jump-control{display:block}.jump-control label{display:block;margin:0 0 .4rem}.scope{line-height:1.6}h2{font-size:1.5rem}.tx-writes strong{font-size:1rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{html{scroll-behavior:auto}body{font-size:11pt;background:white;color:black}.hero-inner,main,footer{width:100%}.masthead,.report-nav,.jump-control{display:none}h1{font-size:24pt}.week{break-inside:avoid;display:block}.model-grid{display:block}.model-grid figure{margin:1rem 0}main>section{padding:1rem 0}details::details-content{content-visibility:visible;display:block}a{color:inherit}}
+
+/* README report defaults */
+:root{color-scheme:light}
+html{scroll-padding-top:1rem}
+body{font-size:1.125rem;line-height:1.7;overflow-wrap:break-word}
+main{max-width:64rem}
+h1{font-size:clamp(1.85rem,4.5vw,3rem);line-height:1.3}
+header{padding:1rem 0}
+nav{position:static}
+nav a{font-size:1rem;min-height:44px}
+select{font:inherit;min-height:44px;max-width:100%;background:var(--bg,var(--paper));color:var(--ink);border:1px solid var(--line);padding:.45rem .6rem;border-radius:.2rem}
+select:focus-visible{outline:3px solid #8b513a;outline-offset:3px}
+.jump-nav{display:flex;align-items:center;gap:.75rem;padding:.7rem 0}
+.jump-nav label{font-weight:700;font-size:1rem}
+.jump-nav select{min-width:0;flex:1}
+@media(max-width:760px){
+ main{padding-left:1rem;padding-right:1rem}
+ header{padding:1rem 0}
+ h1{font-size:1.85rem;margin:.5rem 0 1rem}
+ h2{font-size:1.5rem}
+ .lead,.lede{font-size:1.125rem;line-height:1.7}
+ .edition,.eyebrow,.kicker,.section-kicker{font-size:1rem;letter-spacing:.02em}
+ .figure{padding:1rem;margin:1.25rem 0}
+ section,section.visual,.section{padding:1.75rem 0}
+ .jump-nav{align-items:stretch;flex-direction:column;gap:.3rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{nav,.jump-nav{display:none!important}details::details-content{content-visibility:visible;display:block}h1{font-size:24pt}}
+.hero-inner,.nav-inner,main,footer{max-width:46rem}.nav-inner{flex-wrap:wrap;gap:.1rem 1.2rem}@media(max-width:760px){main{padding-left:0;padding-right:0}}
 </style>
 </head>
 <body>
 <header class="hero"><div class="hero-inner"><div class="masthead"><a href="../../">보고서 목록</a><span>2026.11.24</span></div><h1>API 하나로,<br><em>Spring부터 DB까지.</em></h1><p class="lead">Spring 7장부터 학습 기록 API를 만드세요. 요청 처리·저장·트랜잭션을 같은 코드로 익힙니다.</p><p class="meta">8주 계획 · 주 3시간 가정</p><div class="today"><p><strong>오늘 25분</strong> · 7장 예제 실행 후 요청 경로를 3문장으로 설명하세요.</p><a href="../spring-start-here-chapter-7/">7장 요약</a></div></div></header>
-<nav class="report-nav" aria-label="목차"><div class="nav-inner"><a href="#plan">학습 계획</a><a href="#model">핵심 개념</a><a href="#restart">진도 조정</a></div></nav>
+<nav class="report-nav" aria-label="목차"><div class="nav-inner"><a href="#plan">학습 계획</a><a href="#model">핵심 개념</a><a href="#routine">주간 루틴</a><a href="#restart">진도 조정</a><a href="#position">현재 진도</a><a href="#references">참고자료</a></div></nav>
 <main>
 <section id="plan"><h2>8주 계획</h2>
 
@@ -46,7 +75,7 @@
 <section id="position"><h2>현재 진도와 우선순위</h2>
 <p class="small">학습 이슈 기준 · 2026.11.24 조회 · 마지막 갱신 11.05</p>
 <dl class="status"><dt>읽은 범위</dt><dd>Spring Start Here 1~6장 · Kurose &amp; Ross 1~2장 · JVMS 2장 · Annotations · Reactor Core Features</dd><dt>이어갈 곳</dt><dd>Spring 7장. 요약은 있지만 이슈는 미완료이므로 예제 실행부터 확인합니다.</dd></dl>
-<details><summary>업무·마감에 따라 바꿀 순서</summary><ul class="compact-list"><li><strong>Gateway·WebFlux가 급하면:</strong> Reactor 복습 → WebFlux → Reactor Netty. DB 심화는 뒤로 미룹니다.</li><li><strong>SAA 시험 일정이 있으면:</strong> 강의를 본학습으로 교체합니다.</li><li><strong>급한 요구가 없으면:</strong> 8주 후 WebFlux·데이터 심화·배포 중 하나만 선택합니다.</li></ul></details>
+<details open><summary>업무·마감에 따라 바꿀 순서</summary><ul class="compact-list"><li><strong>Gateway·WebFlux가 급하면:</strong> Reactor 복습 → WebFlux → Reactor Netty. DB 심화는 뒤로 미룹니다.</li><li><strong>SAA 시험 일정이 있으면:</strong> 강의를 본학습으로 교체합니다.</li><li><strong>급한 요구가 없으면:</strong> 8주 후 WebFlux·데이터 심화·배포 중 하나만 선택합니다.</li></ul></details>
 <p class="scope">본 계획은 선택 학습입니다. 책 전체 완독으로 표시하지 않습니다.</p>
 </section>
 </main>

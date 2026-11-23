@@ -3,7 +3,6 @@
 이 저장소는 공개 HTML 보고서를 GitHub Pages로 제공합니다. 저장소와 게시된 파일은 누구나 볼 수 있으므로 비공개 정보는 넣지 않습니다.
 
 - 보고서 목록: https://lsc4719.github.io/github-pages/
-- 예시 보고서: https://lsc4719.github.io/github-pages/reports/spring-start-here-chapter-7/
 
 ## 구조
 
