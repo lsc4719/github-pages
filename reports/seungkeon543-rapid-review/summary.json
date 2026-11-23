@@ -1,0 +1,248 @@
+{
+  "months": {
+    "9": {
+      "n": 56,
+      "results": {
+        "W": 28,
+        "L": 27,
+        "D": 1
+      },
+      "colors": {
+        "white": {
+          "W": 14,
+          "L": 15
+        },
+        "black": {
+          "L": 12,
+          "W": 14,
+          "D": 1
+        }
+      },
+      "termination": {
+        "win": 28,
+        "timeout": 1,
+        "checkmated": 17,
+        "resigned": 9,
+        "stalemate": 1
+      },
+      "first_rating": 1259,
+      "last_rating": 1254,
+      "min_rating": 1211,
+      "max_rating": 1261,
+      "time_control": {
+        "600": 56
+      }
+    },
+    "10": {
+      "n": 14,
+      "results": {
+        "W": 9,
+        "L": 3,
+        "D": 2
+      },
+      "colors": {
+        "white": {
+          "L": 2,
+          "W": 4,
+          "D": 1
+        },
+        "black": {
+          "W": 5,
+          "L": 1,
+          "D": 1
+        }
+      },
+      "termination": {
+        "win": 9,
+        "resigned": 2,
+        "checkmated": 1,
+        "repetition": 1,
+        "stalemate": 1
+      },
+      "first_rating": 1262,
+      "last_rating": 1301,
+      "min_rating": 1254,
+      "max_rating": 1301,
+      "time_control": {
+        "600": 14
+      }
+    },
+    "11": {
+      "n": 86,
+      "results": {
+        "D": 10,
+        "W": 37,
+        "L": 39
+      },
+      "colors": {
+        "white": {
+          "L": 17,
+          "W": 22,
+          "D": 4
+        },
+        "black": {
+          "D": 6,
+          "W": 15,
+          "L": 22
+        }
+      },
+      "termination": {
+        "insufficient": 4,
+        "win": 37,
+        "checkmated": 21,
+        "resigned": 17,
+        "repetition": 3,
+        "timeout": 1,
+        "stalemate": 2,
+        "agreed": 1
+      },
+      "first_rating": 1301,
+      "last_rating": 1299,
+      "min_rating": 1206,
+      "max_rating": 1314,
+      "time_control": {
+        "600": 86
+      }
+    }
+  },
+  "recent20": {
+    "n": 20,
+    "results": {
+      "W": 8,
+      "L": 10,
+      "D": 2
+    },
+    "colors": {
+      "white": {
+        "W": 6,
+        "L": 4
+      },
+      "black": {
+        "L": 6,
+        "W": 2,
+        "D": 2
+      }
+    },
+    "termination": {
+      "win": 8,
+      "checkmated": 6,
+      "repetition": 1,
+      "resigned": 4,
+      "agreed": 1
+    },
+    "first_rating": 1312,
+    "last_rating": 1299,
+    "min_rating": 1289,
+    "max_rating": 1314,
+    "time_control": {
+      "600": 20
+    }
+  },
+  "previous20": {
+    "n": 20,
+    "results": {
+      "L": 4,
+      "W": 13,
+      "D": 3
+    },
+    "colors": {
+      "white": {
+        "W": 8,
+        "L": 1,
+        "D": 1
+      },
+      "black": {
+        "L": 3,
+        "W": 5,
+        "D": 2
+      }
+    },
+    "termination": {
+      "checkmated": 4,
+      "win": 13,
+      "stalemate": 1,
+      "repetition": 1,
+      "insufficient": 1
+    },
+    "first_rating": 1221,
+    "last_rating": 1304,
+    "min_rating": 1221,
+    "max_rating": 1304,
+    "time_control": {
+      "600": 20
+    }
+  },
+  "all": {
+    "n": 156,
+    "results": {
+      "W": 74,
+      "L": 69,
+      "D": 13
+    },
+    "colors": {
+      "white": {
+        "W": 40,
+        "L": 34,
+        "D": 5
+      },
+      "black": {
+        "L": 35,
+        "W": 34,
+        "D": 8
+      }
+    },
+    "termination": {
+      "win": 74,
+      "timeout": 2,
+      "checkmated": 39,
+      "resigned": 28,
+      "stalemate": 4,
+      "repetition": 4,
+      "insufficient": 4,
+      "agreed": 1
+    },
+    "first_rating": 1259,
+    "last_rating": 1299,
+    "min_rating": 1206,
+    "max_rating": 1314,
+    "time_control": {
+      "600": 156
+    }
+  },
+  "sample": {
+    "n": 40,
+    "results": {
+      "L": 14,
+      "W": 21,
+      "D": 5
+    },
+    "colors": {
+      "white": {
+        "W": 14,
+        "L": 5,
+        "D": 1
+      },
+      "black": {
+        "L": 9,
+        "W": 7,
+        "D": 4
+      }
+    },
+    "termination": {
+      "checkmated": 10,
+      "win": 21,
+      "stalemate": 1,
+      "repetition": 2,
+      "insufficient": 1,
+      "resigned": 4,
+      "agreed": 1
+    },
+    "first_rating": 1221,
+    "last_rating": 1299,
+    "min_rating": 1221,
+    "max_rating": 1314,
+    "time_control": {
+      "600": 40
+    }
+  }
+}

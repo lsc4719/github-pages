@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "seungkeon543-rapid-review",
+      "title": "seungkeon543 — 1300대 안착을 위한 대국 분석",
+      "summary": "래피드 156국 현황과 최근 40국 Stockfish 19 분석. 실전 6장면의 체스판·개선 수순, 흑의 과제와 4주 연습 계획.",
+      "date": "2026-11-24",
+      "path": "./reports/seungkeon543-rapid-review/"
+    },
+    {
       "slug": "police-exam-study-guide",
       "title": "경찰공무원 시험, 무엇부터 어떻게 준비할까",
       "summary": "순경 일반공채의 시험 정보·2026년 제도 변화, 과목별 공부법과 24주 계획, 체력·면접 준비 체크리스트.",
