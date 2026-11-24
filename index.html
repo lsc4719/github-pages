@@ -6,15 +6,15 @@
   <meta name="description" content="학습 계획, 대국 분석, 조사 보고서를 최신순으로 모았습니다.">
   <title>보고서 목록</title>
   <style>
-    :root { color-scheme:light; --bg:#f7f2e9; --ink:#342f29; --muted:#655e52; --line:#d9cfc0; --accent:#425d46; --terra:#8b513a; }
+    :root { color-scheme:light; --bg:#f7f2e9; --paper:#fffcf6; --ink:#342f29; --muted:#655e52; --line:#d9cfc0; --accent:#425d46; --terra:#8b513a; }
     * { box-sizing:border-box; }
     body { margin:0; color:var(--ink); background:var(--bg); font:1.125rem/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; word-break:keep-all; overflow-wrap:break-word; }
     main { width:min(64rem,calc(100% - 2rem)); margin:auto; padding:2rem 0 3rem; }
     header { padding:0 0 1.25rem; border-bottom:1px solid var(--line); }
     h1 { margin:0; font-size:clamp(1.85rem,4vw,2.5rem); line-height:1.3; letter-spacing:-.035em; }
     .intro { margin:.6rem 0 0; color:var(--muted); }
-    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:2rem; }
-    .report-card { min-width:0; display:flex; flex-direction:column; padding:1.25rem 0; border-bottom:1px solid var(--line); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.1rem; margin-top:1.25rem; }
+    .report-card { min-width:0; display:flex; flex-direction:column; padding:1.4rem; background:var(--paper); border:1px solid var(--line); border-radius:1rem; box-shadow:0 4px 16px rgba(52,47,41,.04); }
     .date { margin:0; color:var(--muted); font-size:1rem; font-variant-numeric:tabular-nums; }
     h2 { margin:.25rem 0 .5rem; font-size:1.3rem; line-height:1.5; letter-spacing:-.025em; }
     a { color:var(--accent); text-underline-offset:.2em; }
@@ -23,8 +23,8 @@
     a:focus-visible { outline:3px solid var(--terra); outline-offset:4px; }
     .report-card > p:not(.date) { margin:0 0 .5rem; color:var(--muted); }
     .open { display:inline-flex; align-items:center; align-self:flex-start; min-height:44px; margin-top:auto; font-size:1rem; font-weight:700; }
-    @media(max-width:48rem) { main { padding-top:1.25rem; } .grid { grid-template-columns:minmax(0,1fr); } .report-card { padding:1rem 0; } }
-    @media print { body { background:white; color:black; font-size:11pt; } main { width:100%; padding:0; } .grid { display:block; } .report-card { break-inside:avoid; } .open { display:none; } a { color:inherit; } }
+    @media(max-width:48rem) { main { padding-top:1.25rem; } .grid { grid-template-columns:minmax(0,1fr); } .report-card { padding:1.1rem; } }
+    @media print { body { background:white; color:black; font-size:11pt; } main { width:100%; padding:0; } .grid { display:block; } .report-card { break-inside:avoid; margin-bottom:1rem; background:white; box-shadow:none; border-radius:0; } .open { display:none; } a { color:inherit; } }
   </style>
 </head>
 <body>
