@@ -1,117 +1,98 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="현대미술의 핵심 개념과 다섯 작품으로 익히는 감상법. 함께 보고, 느끼고, 대화하기 위한 입문 레포트."><title>현대미술, 함께 이야기하기 위한 기초</title>
 <style>
-:root{color-scheme:light dark;--bg:#fff;--ink:#182237;--muted:#536078;--line:#d3d9e4;--accent:#ad3b16;--wash:#f3f5fa;--soft:#f3f5fa;--hero:#142337;--hero-ink:#fff;--orange:#ff895e;--blue:#b9cfff;--surface:#e8edf7}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:2rem}body{margin:0;background:var(--bg);color:var(--ink);font:1.125rem/1.9 system-ui,-apple-system,"Noto Sans KR",sans-serif;word-break:keep-all;overflow-wrap:anywhere}main{max-width:76rem;margin:auto;padding:1.2rem 2rem 5rem}a{color:var(--accent);text-underline-offset:.25em}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:4px}nav a,.back,button{display:inline-flex;align-items:center;min-height:44px;padding:.4rem .6rem}.back{padding-left:0;font-size:1rem}.topline{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-bottom:1rem}.edition{font-size:.875rem;font-weight:700;letter-spacing:.08em;color:var(--muted)}header{padding:3.5rem;background:var(--hero);color:var(--hero-ink);position:relative;overflow:hidden}.eyebrow{font-size:.9rem;color:var(--orange);font-weight:750;letter-spacing:.12em}h1{font-size:clamp(2.6rem,5vw,4.8rem);line-height:1.25;letter-spacing:-.065em;margin:.7rem 0 1.8rem}h2{font-size:clamp(1.7rem,3.7vw,2.5rem);line-height:1.4;letter-spacing:-.04em;margin:0 0 1.3rem}h3{font-size:1.35rem;line-height:1.5;margin:1.8rem 0 .7rem}p{margin:.8rem 0 1.2rem}.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:center;gap:2.5rem}.hero-copy,.hero-art{min-width:0}.hero-art{position:relative;aspect-ratio:1;background:repeating-linear-gradient(0deg,transparent,transparent 39px,#ffffff0d 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,#ffffff0d 40px);isolation:isolate}.hero-art .orbit{position:absolute;inset:12%;border:1px solid #ffffff65;border-radius:50%}.hero-art .disc{position:absolute;width:52%;aspect-ratio:1;border-radius:50%;background:var(--orange);top:6%;right:7%}.hero-art .frame{position:absolute;width:59%;height:64%;top:26%;left:5%;border:14px solid var(--blue);transform:rotate(-12deg)}.hero-art .slab{position:absolute;width:63%;height:16%;background:#fff;bottom:15%;right:0;transform:rotate(14deg);mix-blend-mode:soft-light}.art-word{position:absolute;bottom:0;left:6%;font:italic clamp(2.4rem,5vw,4.5rem)/1 Georgia,serif;color:#fff;letter-spacing:-.05em}.hero-art figcaption{position:absolute;left:6%;top:0;color:#d5e0f2;font-size:.875rem}.hero-art figure{margin:0}.lead{font-size:1.2rem;margin-top:2rem;max-width:58rem}.meta,.source,.note{color:var(--muted);font-size:1rem}header .meta,header .note{color:#c7d4e8}header .note{font-size:.95rem}.key{background:var(--wash);padding:1.3rem 1.6rem;border-left:4px solid var(--accent);margin:1.7rem 0}.key p:last-child{margin-bottom:0}header .key{background:#ffffff0b;border-color:var(--orange)}.hero-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.3rem;padding:1.3rem 0;border-top:1px solid #ffffff40;margin-top:2rem}.hero-principles p{margin:0;font-size:1rem}.hero-principles strong{display:block;color:var(--orange);font-size:.9rem;margin-bottom:.4rem}nav{padding:1.5rem 0;border-bottom:1px solid var(--line)}nav ol{display:flex;gap:.2rem .7rem;flex-wrap:wrap;list-style:none;padding:0;margin:0}nav li{margin:0}nav a{font-size:.95rem;color:var(--ink);text-decoration:none}nav a:hover{background:var(--wash)}section{max-width:56rem;margin:auto;padding:3.8rem 0;border-bottom:1px solid var(--line)}section.visual{max-width:none;padding:3rem 0}.section-kicker{display:block;font-size:.875rem;letter-spacing:.13em;color:var(--accent);font-weight:750;margin-bottom:.7rem}.concept{padding:1.5rem 0;border-top:1px solid var(--line)}.concept h3{margin:.3rem 0}.concept p{margin:.6rem 0}.concept .note{padding:.7rem 1rem;background:var(--wash);margin-top:.9rem}.work{margin:2.5rem 0;padding:0 0 2rem;border-bottom:1px solid var(--line)}.work:last-child{border:0;padding-bottom:0}.work .label{padding-top:1rem;border-top:3px solid var(--accent);display:inline-block}.label{font-size:.95rem;font-weight:750;color:var(--accent)}blockquote{margin:1.4rem 0;padding:1rem 1.4rem;border-left:3px solid var(--accent);background:var(--soft)}blockquote p{margin:.4rem 0}li{margin:.6rem 0}details{padding:1.2rem 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;min-height:44px;font-weight:750}button{font:inherit;cursor:pointer;background:var(--ink);color:var(--bg);border:1px solid transparent;border-radius:.25rem}footer{max-width:56rem;margin:auto;padding-top:2rem}.sources li{margin:.9rem 0}.sources a{display:inline-block;min-height:44px}strong{font-weight:750}.steps{padding-left:1.7rem}.steps li{padding:0 0 1.1rem .4rem}.steps li::marker{color:var(--accent);font-weight:750}
-.visual-header{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end;margin-bottom:2rem}.visual-header p{margin:0;color:var(--muted);font-size:1rem}.visual-header h2{margin:0}.lens-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.lens-grid article{background:var(--bg);padding:1.4rem;min-width:0;position:relative}.lens-grid h3{margin:.6rem 0;font-size:1.25rem}.lens-grid p{font-size:1rem;margin:.5rem 0}.lens-symbol{display:block;width:3rem;height:3rem;position:relative;color:var(--accent)}.symbol-form{border:3px solid currentColor}.symbol-form::after{content:"";position:absolute;width:1.8rem;height:1.8rem;background:currentColor;border-radius:50%;top:.8rem;left:1rem;opacity:.5}.symbol-idea{border:3px solid currentColor;border-radius:50%}.symbol-idea::after{content:"";position:absolute;inset:25%;border:2px solid currentColor;transform:rotate(45deg)}.symbol-space{border:2px solid currentColor;transform:skewY(-10deg)}.symbol-space::after{content:"";position:absolute;inset:25%;border:2px solid currentColor}.symbol-context{border:2px solid currentColor;border-radius:50%}.symbol-context::after{content:"";position:absolute;left:-15%;top:40%;width:130%;height:20%;border-top:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-30deg)}.lens-grid article[data-active="true"]{background:var(--wash);box-shadow:inset 0 -4px var(--accent)}.lens-controls{display:flex;gap:.6rem;flex-wrap:wrap;margin:1.5rem 0}.lens-controls[hidden]{display:none}.lens-controls button{background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:.6rem 1rem;font-size:1rem}.lens-controls button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}.lens-answer{padding:1.4rem 1.6rem;background:var(--wash);border-left:4px solid var(--accent)}.lens-answer p{margin:.3rem 0}.lens-answer a{display:inline-flex;min-height:44px;align-items:center}.timeline{list-style:none;margin:2rem 0;padding:0}.timeline li{display:grid;grid-template-columns:5rem 1fr;gap:1.4rem;margin:0;padding-bottom:1.5rem;position:relative}.timeline li::before{content:"";position:absolute;left:5.7rem;top:.9rem;bottom:-.9rem;width:1px;background:var(--line)}.timeline li:last-child::before{display:none}.timeline .year{font:italic 1.5rem/1.6 Georgia,serif;color:var(--accent)}.timeline .event{padding-left:1.2rem;position:relative}.timeline .event::before{content:"";position:absolute;left:-.95rem;top:.8rem;width:.6rem;height:.6rem;border-radius:50%;background:var(--accent)}.timeline a{font-weight:750;display:inline-block;min-height:44px}.timeline p{margin:.2rem 0;color:var(--muted);font-size:1rem}
-.compare{width:100%;border-collapse:collapse;font-size:1rem}.compare th,.compare td{text-align:left;padding:1rem .9rem;vertical-align:top;border-bottom:1px solid var(--line)}.compare thead{background:var(--ink);color:var(--bg)}.compare th{font-weight:750}.compare tbody th{width:22%}.compare caption{text-align:left;padding-bottom:1rem;font-size:1rem;color:var(--muted)}.compare tbody tr:nth-child(even){background:var(--wash)}.compare .cell-label{display:none}.compare a{display:inline-block;min-height:44px}.concept-triptych{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;padding:1.5rem;background:var(--wash);margin:1.5rem 0}.concept-triptych>div{min-width:0;text-align:center;border-bottom:2px solid var(--line);padding:.5rem}.concept-triptych strong{display:block;font-size:1.25rem}.concept-triptych p{margin:.3rem 0;font-size:1rem}.concept-triptych .type{font:italic 2rem/1.5 Georgia,serif;color:var(--accent)}figure{margin:1.5rem 0}figcaption{font-size:.95rem;color:var(--muted);margin-top:.8rem}.observation-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;list-style:none;padding:0}.observation-path li{padding:1.3rem;border-top:3px solid var(--accent);background:var(--wash);margin:0;min-width:0}.observation-path strong{font-size:1.3rem;display:block}.observation-path p{font-size:1rem;margin:.5rem 0}.observation-path .prompt{font-weight:700;color:var(--accent)}.quick-link{display:inline-flex;min-height:44px;align-items:center;font-size:1rem}
-
-@media(max-width:760px){main{padding:1rem 1.2rem 3rem}header{padding:2rem 1.5rem}.hero-grid{grid-template-columns:1fr;gap:.5rem}.hero-art{max-width:20rem;width:100%;margin:1rem auto}.hero-principles{grid-template-columns:1fr;gap:1rem}.hero-principles strong{display:inline;margin-right:.6rem}.visual-header{grid-template-columns:1fr;gap:.7rem}.lens-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.observation-path{grid-template-columns:1fr}.concept-triptych{padding:1rem;gap:.5rem}.compare,.compare tbody,.compare tr,.compare td,.compare tbody th{display:block;width:100%}.compare thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.compare tbody tr{padding:1rem;border:1px solid var(--line);margin-bottom:1rem}.compare th,.compare td{padding:.5rem 0;border:0}.compare tbody th{font-size:1.2rem}.compare .cell-label{display:block;font-size:.9rem;font-weight:750;color:var(--accent);margin-bottom:.2rem}.compare caption{display:block}section{padding:2.7rem 0}.edition{max-width:10rem;text-align:right}}
-@media(max-width:420px){h1{font-size:2.6rem}.hero-art{max-width:16rem}.lens-grid{grid-template-columns:1fr}.concept-triptych{grid-template-columns:1fr}.concept-triptych>div{display:grid;grid-template-columns:4rem 1fr;text-align:left;align-items:center}.concept-triptych .type{grid-row:span 2}.concept-triptych strong{font-size:1.15rem}.timeline li{grid-template-columns:4rem 1fr;gap:1rem}.timeline li::before{left:4.3rem}.timeline .event::before{left:-.95rem}.topline{align-items:flex-start}header{padding:1.6rem 1.2rem}}
+:root{color-scheme:light;--bg:#f7f2e9;--ink:#342f29;--muted:#655e52;--line:#d9cfc0;--accent:#7b4935;--sage:#425d46;--wash:#eee7dc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.125rem/1.7 system-ui,-apple-system,"Noto Sans KR",sans-serif;word-break:keep-all;overflow-wrap:break-word}
+main{width:min(46rem,calc(100% - 2rem));margin:auto;padding:.5rem 0 3rem}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--sage);outline-offset:4px}
+.back,nav a{display:inline-flex;align-items:center;min-height:44px;font-size:1rem}
+.topline{margin-bottom:.5rem}
+header{padding:.5rem 0 1rem}
+h1,h2,h3{line-height:1.4;letter-spacing:-.035em}
+h1{font-size:1.85rem;margin:0 0 .75rem}
+h2{font-size:1.5rem;margin:0 0 1rem}
+h3{font-size:1.25rem;margin:1.5rem 0 .6rem}
+p{margin:.5rem 0 1rem}
+.meta,.note,figcaption{font-size:1rem;color:var(--muted)}
+header .note{margin-bottom:0}
+.reading-links{padding:.5rem 0;border-block:1px solid var(--line)}
+.reading-links a{display:flex;padding:.1rem 0}
+section{padding:1.75rem 0;border-bottom:1px solid var(--line)}
+ul,ol{padding-left:1.3rem;margin:.75rem 0}
+li{margin:.65rem 0}
+figure{margin:1rem 0}
+figcaption{margin-top:.6rem}
+blockquote,.key{margin:1rem 0;padding:.4rem 0 .4rem .85rem;border-left:3px solid var(--accent)}
+blockquote p:last-child,.key p:last-child{margin-bottom:0}
+.observation-path{list-style:none;counter-reset:step;padding:0}
+.observation-path li{counter-increment:step;position:relative;padding:.4rem 0 .6rem 2rem;margin:0}
+.observation-path li:before{content:counter(step);position:absolute;left:0;color:var(--sage);font-weight:750}
+.observation-path li:not(:last-child):after{content:"";position:absolute;left:.45rem;top:2.1rem;bottom:0;border-left:1px solid var(--line)}
+.observation-path strong{display:block}
+.observation-path p{margin:.2rem 0;font-size:1rem}
+.prompt{color:var(--accent)}
+.steps li{padding-bottom:.5rem}
+.viewpoints,.work-comparison{margin:0}
+.viewpoints>div,.work-comparison>div{padding:1rem 0;border-top:1px solid var(--line)}
+.viewpoints dt,.work-comparison dt{font-size:1.125rem;font-weight:750;margin:0 0 .5rem}
+.viewpoints dd,.work-comparison dd{margin:.4rem 0}
+.viewpoints dd:last-child a,.work-comparison dt a{display:inline-flex;align-items:center;min-height:44px}
+.work-comparison dd{font-size:1rem}
+.concept{padding:1rem 0;border-top:1px solid var(--line)}
+.concept h3{margin:0 0 .5rem}
+.concept .note{margin-bottom:0}
+.work{padding:1rem 0;border-top:1px solid var(--line)}
+.work h3{margin:.4rem 0 .75rem}
+.label{font-size:1rem;color:var(--sage);font-weight:700;margin:0}
+.concept-triptych{border-left:2px solid var(--line);padding-left:1rem}
+.concept-triptych>div{padding:.65rem 0;border-bottom:1px solid var(--line)}
+.concept-triptych>div:last-child{border:0}
+.concept-triptych .type{display:block;font-size:1rem;color:var(--muted)}
+.concept-triptych strong{display:block}
+.concept-triptych p{margin:.2rem 0;font-size:1rem}
+.timeline{list-style:none;padding:0}
+.timeline li{position:relative;margin:0;padding:0 0 1rem 1.25rem;border-left:1px solid var(--line)}
+.timeline li:before{content:"";position:absolute;left:-.23rem;top:.6rem;width:.4rem;height:.4rem;background:var(--sage);border-radius:50%}
+.timeline .year{display:block;font-size:1rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.timeline .event a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+.timeline p{margin:.1rem 0}
+details{padding:.5rem 0;border-bottom:1px solid var(--line)}
+summary{min-height:44px;padding:.4rem 0;font-weight:700;cursor:pointer}
+.sources{font-size:1rem}
+.sources a{overflow-wrap:anywhere}
+footer{padding-top:1.5rem}
+button{font:inherit;min-height:44px;padding:.4rem .75rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:.25rem;cursor:pointer}
+@media(min-width:48rem){main{padding-top:1rem}h1{font-size:2.5rem}h2{font-size:1.75rem}.reading-links{display:flex;gap:1.5rem}.reading-links a{display:inline-flex}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{body{font-size:11pt;background:white;color:black}main{max-width:none;padding:0}nav,.back,button,.hero-art,.edition,.lens-controls{display:none!important}header{padding:0;background:white;color:black}.hero-grid{display:block}header .meta,header .note,.meta,.note{color:#333}.hero-principles{display:block}.hero-principles strong{color:#333}.hero-principles p{margin:1rem 0}section,section.visual{max-width:none;padding:1.5rem 0}.lens-grid,.concept-triptych,.observation-path{display:block}.lens-grid article{break-inside:avoid}.visual-header{display:block}.visual-header p{margin-top:1rem}.work,blockquote,.key,figure{break-inside:avoid}a{color:inherit}.compare thead{background:#eee;color:black}details{display:block}details>*{display:block}h1{font-size:30pt}h2{font-size:20pt}}
-
-/* README report defaults */
-:root{color-scheme:light}
-html{scroll-padding-top:1rem}
-body{font-size:1.125rem;line-height:1.7;overflow-wrap:break-word}
-main{max-width:64rem}
-h1{font-size:clamp(1.85rem,4.5vw,3rem);line-height:1.3}
-header{padding:1rem 0}
-nav{position:static}
-nav a{font-size:1rem;min-height:44px}
-select{font:inherit;min-height:44px;max-width:100%;background:var(--bg,var(--paper));color:var(--ink);border:1px solid var(--line);padding:.45rem .6rem;border-radius:.2rem}
-select:focus-visible{outline:3px solid #8b513a;outline-offset:3px}
-.jump-nav{display:flex;align-items:center;gap:.75rem;padding:.7rem 0}
-.jump-nav label{font-weight:700;font-size:1rem}
-.jump-nav select{min-width:0;flex:1}
-@media(max-width:760px){
- main{padding-left:1rem;padding-right:1rem}
- header{padding:1rem 0}
- h1{font-size:1.85rem;margin:.5rem 0 1rem}
- h2{font-size:1.5rem}
- .lead,.lede{font-size:1.125rem;line-height:1.7}
- .edition,.eyebrow,.kicker,.section-kicker{font-size:1rem;letter-spacing:.02em}
- .figure{padding:1rem;margin:1.25rem 0}
- section,section.visual,.section{padding:1.75rem 0}
- .jump-nav{align-items:stretch;flex-direction:column;gap:.3rem}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{nav,.jump-nav{display:none!important}details::details-content{content-visibility:visible;display:block}h1{font-size:24pt}}
-
-:root{--bg:#f7f2e9;--ink:#342f29;--muted:#655e52;--line:#d9cfc0;--accent:#7b4935;--wash:#eee7dc;--soft:#eee7dc;--hero:#f7f2e9;--hero-ink:#342f29;--orange:#7b4935;--blue:#a6b39a;--surface:#e8eddf}
-.hero-grid{display:block}header{background:var(--bg);color:var(--ink);border-bottom:1px solid var(--line)}header .meta,header .note{color:var(--muted)}.lead{margin-top:.5rem}
-.lens-grid article{padding:1rem}.lens-answer{padding:.8rem 1rem}.concept-triptych{padding:.8rem}
-@media(max-width:760px){.lens-grid{grid-template-columns:1fr}.concept-triptych{grid-template-columns:1fr}.visual-header{gap:.5rem}.concept{padding:1rem 0}.concept .note{padding:.5rem 0;background:transparent}blockquote,.key{padding:.7rem 1rem}.work{margin:1.5rem 0}}
-
-
-.reading-links{display:flex;flex-wrap:wrap;gap:.2rem 1.25rem;position:static;padding:.65rem 0;margin:0;border-block:1px solid var(--line)}
-.reading-links a{display:inline-flex;align-items:center;min-height:44px;padding:.15rem 0;font-size:1rem;text-decoration:underline}
-@media(max-width:480px){.reading-links{display:block}.reading-links a{display:flex}}
-@media print{.reading-links{display:none!important}}
+@media print{html{scroll-behavior:auto}body{background:white;color:black;font-size:11pt}main{width:100%;padding:0}.back,nav,button{display:none}section{padding:1rem 0}h1{font-size:24pt}h2,h3{break-after:avoid}blockquote,.concept-triptych,.viewpoints>div{break-inside:avoid}a{color:inherit}details::details-content{content-visibility:visible;display:block}}
 </style></head>
 <body><main>
-<div class="topline"><a class="back" href="../../">보고서 목록</a><span class="edition">A FIELD GUIDE TO CONTEMPORARY ART</span></div>
-<header><p class="eyebrow">ART & CONVERSATION · 입문 레포트</p>
-<div class="hero-grid"><div class="hero-copy"><h1>현대미술,<br>함께 이야기하기 위한 기초</h1></div></div>
-<p class="lead"><strong>현대미술을 이야기하려면 ‘무엇을 보았는지 → 어떻게 느꼈는지 → 왜 그렇게 생각하는지’를 연결하면 됩니다.</strong> 먼저 재료·공간·관객의 역할을 살펴보고, 작품의 단서를 근거로 자기 해석을 말해 보세요. 오늘은 아래 다섯 작품 중 하나를 골라 “나는 이렇게 보였는데, 당신은 어땠어?”로 대화를 시작해 봅시다.</p>
-<p class="meta">작성·자료 확인: 2026년 11월 24일 · 약 25~35분 · 미술 비전공자를 위한 시각예술 중심 안내</p>
+<div class="topline"><a class="back" href="../../">보고서 목록</a></div>
+<header>
+<h1>현대미술,<br>함께 이야기하기 위한 기초</h1>
+<p class="lead"><strong>현대미술 감상은 관찰 → 느낌 → 근거 있는 해석을 연결하는 데서 시작합니다.</strong> 오늘은 작품 하나를 1분간 보고, 관찰 하나·느낌 하나·질문 하나를 나눠 보세요.</p>
+<p class="meta">미술 비전공자를 위한 입문 안내 · 자료 기준 2026.11.24</p>
 
-<p class="note">‘현대예술’에는 음악·무용·연극도 포함됩니다. 이 글은 전시장에서 대화를 나누는 데 도움이 되도록 현대미술에 초점을 맞췄습니다. 개념 설명은 입문용으로 단순화했으며, 감상 문장·질문·학습 순서는 이 레포트에서 제안하는 연습입니다.</p>
+
 </header>
-<nav class="reading-links" aria-label="주요 구간"><a href="#practice">오늘 해볼 감상</a><a href="#works">작품 5점</a><a href="#concepts">개념과 배경</a></nav>
-<section id="practice"><span class="section-kicker">LOOK · FEEL · CONNECT</span><h2>전시장에서 바로 쓰는 감상법</h2>
-<figure><ol class="observation-path"><li><strong>관찰</strong><p>실제로 확인한 것</p><p class="prompt">“얇은 천에 빛이 비쳐.”</p></li><li><strong>느낌</strong><p>내 몸과 감정의 반응</p><p class="prompt">“공간이 불안정해 보여.”</p></li><li><strong>근거 있는 해석</strong><p>관찰과 느낌을 연결</p><p class="prompt">“경계가 흐려져 기억 같아.”</p></li></ol><figcaption>한 작품을 말로 풀어보는 예시입니다. 작품의 정답이나 공식 해설이 아닙니다.</figcaption></figure><ol class="steps"><li><strong>설명을 읽기 전, 1분간 관찰합니다.</strong> ‘이상하다’ 대신 “얇은 천이 천장에 매달려 있고 빛이 통과한다”처럼 확인 가능한 것을 세 가지 말합니다.</li>
-<li><strong>몸의 반응을 확인합니다.</strong> 편안한지, 불편한지, 시선이 어디로 가는지, 가까이 가고 싶은지 살펴봅니다. 아무 감정이 없다는 반응도 기록할 수 있습니다.</li>
-<li><strong>설명을 읽고 맥락을 더합니다.</strong> 제목·연도·재료·제작 배경에서 첫인상을 바꾸는 단서 하나를 찾습니다. 설명 전후의 느낌이 달라도 괜찮습니다.</li>
-<li><strong>단서와 해석을 연결합니다.</strong> “천이 비쳐서 안과 밖의 경계가 약해 보이고, 그래서 기억 속 공간처럼 느꼈어.” 관찰에서 해석으로 건너가는 이유를 말합니다.</li>
-<li><strong>상대에게 시선을 돌립니다.</strong> “나는 이 부분이 남는데, 당신은 어디를 먼저 봤어?”라고 묻고 다른 관찰을 들어 봅니다.</li></ol>
+<nav class="reading-links" aria-label="주요 구간"><a href="#practice">오늘 해볼 감상</a><a href="#works">작품 5점</a><a href="#visual-map">관점과 배경</a></nav>
+<section id="practice"><h2>전시장에서 바로 쓰는 감상법</h2>
+<ol class="observation-path">
+<li><strong>관찰 · 1분간 실제로 보기</strong><p>설명을 읽기 전 색·재료·배치처럼 확인한 것을 말합니다.</p><p class="prompt">“얇은 천이 매달려 있고 빛이 통과해.”</p></li>
+<li><strong>느낌 · 몸과 감정의 반응 찾기</strong><p>편안함·불편함, 시선이 머무는 곳을 살핍니다. 아무 느낌이 없다는 반응도 괜찮습니다.</p><p class="prompt">“공간이 불안정해 보여.”</p></li>
+<li><strong>해석 · 무엇을 보고 그렇게 느꼈는지</strong><p>제목·연도·재료·배경을 읽고 첫인상과 비교합니다. 관찰한 단서와 느낌을 연결합니다.</p><p class="prompt">“경계가 흐려져서 기억 속 공간 같아.”</p></li>
+</ol>
+<p class="note">감상 문장은 연습용 예시입니다. 작품의 정답이나 공식 해설이 아닙니다.</p>
+<p>그다음 “나는 이 부분이 남는데, 당신은 어디를 먼저 봤어?”라고 묻습니다. 설명을 읽고 생각이 바뀌었다면 무엇이 달라졌는지도 나눠 보세요.</p>
 <h3>부담 없이 시작하는 대화</h3>
 <blockquote><p>나: “처음에는 그냥 비어 보였는데, 소리가 반복되니까 기다리는 느낌이 생겼어.”<br>상대: “나는 반복보다 소리가 끊기는 순간이 더 중요했어.”<br>나: “그 순간엔 뭐가 달라졌어? 같이 한 번 더 들어보자.”</p></blockquote>
 <p>이 대화에서 필요한 것은 상대의 해석에 동의하는 능력보다, <strong>어떤 부분을 보고 그렇게 느꼈는지 함께 확인하는 태도</strong>입니다. 아내분도 모든 작품의 해설자일 필요는 없습니다. 같은 작품을 각자 고르고 서로 설명해 주는 방식이 대화를 더 편하게 만들 수 있습니다.</p>
 <h3>취향을 알아가는 질문 여섯 개</h3>
 <ul><li>“이 작품에서는 어느 부분을 가장 오래 보고 싶어?”</li><li>“공부하면서 첫인상이 크게 달라진 작품이 있어?”</li><li>“전공하면서 흥미로웠던 매체나 주제는 뭐였어?”</li><li>“설명 없이 볼 때와 알고 볼 때, 어느 쪽이 더 좋아?”</li><li>“이 작가의 다른 작업과 비교하면 무엇이 달라?”</li><li>“나는 아직 설득되지 않는데, 어떤 부분을 더 보면 좋을까?”</li></ul>
 <p>대화가 막히면 “이게 좋은 작품이야?”를 조금 더 구체화해 보세요. “이 재료 선택이 주제를 더 강하게 만들어?”, “실제로 와서 보니 사진과 무엇이 달라?” 같은 질문은 상대에게 자신의 경험을 말할 여지를 줍니다.</p>
-</section>
-<section class="visual" id="visual-map"><div class="visual-header"><h2><span class="section-kicker">WAYS OF SEEING</span>한 작품, 네 가지 렌즈</h2><p>무엇부터 봐야 할지 막막할 때 고르는 감상 도구입니다. 서로 배타적인 분류가 아니라, 한 작품에 겹쳐 사용할 수 있는 관점입니다.</p></div>
-<div class="lens-grid">
-<article id="lens-form" data-active="true"><span class="lens-symbol symbol-form" aria-hidden="true"></span><h3>형식과 감각</h3><p>색 · 재료 · 크기 · 리듬</p><p>내 눈과 몸에<br>무엇이 먼저 닿을까?</p></article>
-<article id="lens-idea"><span class="lens-symbol symbol-idea" aria-hidden="true"></span><h3>생각과 언어</h3><p>개념 · 규칙 · 정의 · 선택</p><p>이 작업은<br>어떤 질문을 던질까?</p></article>
-<article id="lens-space"><span class="lens-symbol symbol-space" aria-hidden="true"></span><h3>공간과 참여</h3><p>설치 · 시간 · 몸 · 행동</p><p>내가 여기 있어야<br>무엇이 달라질까?</p></article>
-<article id="lens-context"><span class="lens-symbol symbol-context" aria-hidden="true"></span><h3>맥락과 관계</h3><p>역사 · 정체성 · 제도 · 권력</p><p>누구의 이야기가<br>어떻게 보일까?</p></article></div>
-<div class="lens-controls" id="lens-controls" role="group" aria-label="감상 렌즈 선택" hidden>
-<button type="button" aria-pressed="true" data-lens="form">형식과 감각</button><button type="button" aria-pressed="false" data-lens="idea">생각과 언어</button><button type="button" aria-pressed="false" data-lens="space">공간과 참여</button><button type="button" aria-pressed="false" data-lens="context">맥락과 관계</button></div>
-<div class="lens-answer" id="lens-answer" aria-live="polite"><strong id="lens-title">형식과 감각으로 보기</strong><p id="lens-question">“이 재료를 다른 것으로 바꾸면, 지금의 느낌이 남아 있을까?”</p><a id="lens-link" href="#work-ross">연습 작품: 곤살레스토레스의 사탕 초상</a></div>
-<p class="note">네 렌즈는 이 레포트의 학습용 구성입니다. 아래 핵심 개념과 작품 해설을 연결해 읽어보세요.</p></section>
-<section id="scope"><h2>현대미술은 하나의 스타일이 아니다</h2>
-<p>‘현대미술’이라는 말은 문맥에 따라 범위가 다릅니다. 한국어에서는 근현대 미술을 넓게 가리키기도 하고, 영어의 <em>contemporary art</em>에 가깝게 쓰기도 합니다. 따라서 “현대미술은 몇 년부터야?”에는 기관과 연구 관점에 따라 다른 답이 나옵니다.</p>
-<p>입문 단계에서는 <strong>근대미술·모던 아트는 전통적 재현과 형식을 새롭게 실험한 역사적 흐름, 동시대미술·컨템퍼러리 아트는 현재와 가까운 과거의 다양한 미술 실천</strong>이라고 잠정적으로 구분하면 편합니다. 경계가 칼로 자르듯 나뉘지는 않습니다. MoMA는 현재 동시대미술을 대략 1980년부터 오늘날까지로 설명하지만, 이를 모든 미술관의 공통 기준으로 보면 안 됩니다. <a href="#s1">MoMA, Contemporary art</a></p>
-<p>추상화만 현대미술인 것도 아닙니다. 사실적인 회화와 조각도 계속 만들어집니다. 영상, 소리, 행위, 일상 사물, 데이터와 관객의 참여까지 작품의 수단이 넓어졌다는 점이 중요합니다. 사회·정치적 문제나 미술 제도 자체를 다루는 작업도 있습니다. <a href="#s1">MoMA, Contemporary art</a></p>
-<blockquote><p>대화의 출발점: “현대미술 전체가 어렵다기보다, 나는 회화는 익숙하고 설치와 퍼포먼스는 아직 낯선 것 같아.”</p></blockquote>
-</section>
-<section id="map"><span class="section-kicker">HISTORY AS QUESTIONS</span><h2>외울 연표보다, 달라진 질문을 보자</h2>
-<p>아래는 서구 미술사의 일부 흐름을 이해하기 위한 길잡이입니다. 세계 미술이 이 순서로 발전했다는 뜻도, 뒤의 방식이 앞의 방식보다 우월하다는 뜻도 아닙니다. 한국과 다른 지역의 역사는 각자의 정치·사회·문화적 조건과 함께 봐야 합니다.</p>
-<figure aria-labelledby="timeline-title"><h3 id="timeline-title">다섯 작품, 다섯 번의 질문</h3><ol class="timeline">
-<li><span class="year">1917</span><div class="event"><a href="#work-duchamp">뒤샹 · 샘</a><p>기성품을 선택하는 일도 창작일까?</p></div></li>
-<li><span class="year">1964</span><div class="event"><a href="#work-ono">오노 요코 · 컷 피스</a><p>관객이 행동할 때 누가 책임을 질까?</p></div></li>
-<li><span class="year">1965</span><div class="event"><a href="#work-kosuth">코수스 · 하나이자 세 개의 의자</a><p>사물과 사진과 말은 어떻게 다를까?</p></div></li>
-<li><span class="year">1974</span><div class="event"><a href="#work-paik">백남준 · TV 부처</a><p>실시간 화면이 보는 방식을 바꿀까?</p></div></li>
-<li><span class="year">1991</span><div class="event"><a href="#work-ross">곤살레스토레스 · 로스의 초상</a><p>사라지는 재료로 사람을 기억할 수 있을까?</p></div></li></ol>
-<figcaption>선정한 작품의 제작·초연 연도입니다. 현대미술 전체의 시대 구분이나 진보의 순서를 뜻하지 않습니다. 작품별 출처는 아래 해설에 연결되어 있습니다.</figcaption></figure><div class="concept"><h3>재현과 형식에 대한 실험</h3><p>“무엇을 그렸는가?”와 함께 “색·선·구성이 어떻게 작동하는가?”가 중요해집니다. 대상을 닮게 그리지 않아도 리듬, 긴장, 감각을 조직할 수 있습니다. <strong>추상</strong>은 이런 감상의 한 입구입니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a></p></div>
-<div class="concept"><h3>작가의 손에서 작가의 선택으로</h3><p>뒤샹의 레디메이드는 기성품을 작품으로 제시하면서, 작가는 반드시 직접 만들어야 하는지 묻습니다. 회화의 기술을 없애 버렸다기보다 예술적 행위의 범위를 흔든 사례입니다. <a href="#s3">MoMA Learning, Marcel Duchamp and the Readymade</a></p></div>
-<div class="concept"><h3>완성된 물체에서 생각·행위·상황으로</h3><p>개념미술에서는 아이디어와 규칙이, 퍼포먼스에서는 몸과 시간이, 설치에서는 공간의 구성이 중요해질 수 있습니다. 무엇을 샀거나 보존해야 ‘작품’을 소유한 것인지도 복잡해집니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a><a href="#s4">MoMA, Conceptual art</a></p></div>
-<div class="concept"><h3>누가 말하고, 누가 보이는가</h3><p>미술관의 선택, 젠더와 정체성, 역사와 사회적 권력도 감상의 대상이 됩니다. 이때 “작가가 말하고 싶은 주제”와 “그 주제를 구현한 형식”을 함께 봐야 작품을 구체적으로 이야기할 수 있습니다. <a href="#s1">MoMA, Contemporary art</a></p></div>
-<div class="key"><p><strong>이 흐름을 하나로 연결하면:</strong> 작품을 볼 때 대상의 생김새뿐 아니라, 무엇이 선택되고 어떤 관계와 경험이 만들어지는지도 살펴보게 됩니다.</p></div>
-</section>
-<section id="concepts"><h2>대화에 바로 쓰이는 핵심 개념</h2>
-<p>용어는 정답을 맞히는 암호가 아니라 관찰을 돕는 도구입니다. 먼저 쉬운 말로 설명할 수 있으면 충분합니다.</p>
-<div class="concept"><h3>형식과 내용</h3><p><strong>형식</strong>은 색, 크기, 재료, 배치, 소리, 지속시간처럼 작품이 구성되는 방식입니다. <strong>내용</strong>은 작품이 다루는 주제나 의미입니다. “상실을 다룬다”에서 멈추지 않고 “왜 줄어드는 재료를 택했을까?”까지 묻는 데 쓰세요.</p><p class="note">쓸 수 있는 말: “주제보다 반복되는 소리가 먼저 내 몸에 와닿았어.”</p></div>
-<div class="concept"><h3>재현과 추상</h3><p>재현은 사람·사물·장면 등을 나타내는 방식입니다. 추상은 대상을 단순화하거나, 알아볼 수 있는 대상 없이 색·선·면의 관계를 다루기도 합니다. 추상 앞에서 무조건 숨은 사물을 찾을 필요는 없습니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a></p><p class="note">질문: “무엇을 그렸는지 잠시 잊으면, 어디가 무겁고 어디가 움직이는 것 같아?”</p></div>
-<div class="concept"><h3>매체와 물질성</h3><p><strong>매체</strong>는 회화·사진·영상·소리 등 작업을 전달하는 수단입니다. <strong>물질성</strong>은 천의 비침, 금속의 차가움, 종이의 찢어짐처럼 재료가 실제로 주는 성질입니다. 같은 ‘기억’이라는 주제도 돌과 얇은 천은 전혀 다르게 경험될 수 있습니다.</p><p class="note">질문: “이걸 사진 한 장으로 바꾸면 무엇이 사라질까?”</p></div>
-<div class="concept"><h3>레디메이드와 개념미술</h3><p><strong>레디메이드</strong>는 기존 사물을 선택해 예술로 제시하는 작업과 연결됩니다. <strong>개념미술</strong>은 아이디어나 개념에 큰 비중을 두는 미술입니다. 둘은 관련되지만 같은 말은 아닙니다. 모든 개념미술이 기성품을 쓰는 것은 아닙니다. <a href="#s3">MoMA Learning, Marcel Duchamp and the Readymade</a><a href="#s4">MoMA, Conceptual art</a></p><p class="note">질문: “여기서 작품의 핵심은 사물 자체일까, 선택과 제시 방식일까?”</p></div>
-<div class="concept"><h3>설치와 장소특정성</h3><p><strong>설치</strong>는 사물·영상·소리 등을 공간에 구성하여 경험하게 하는 작업을 말합니다. <strong>장소특정성</strong>은 특정 장소의 구조·역사·사회적 맥락이 작품에 중요한 경우를 이해하는 개념입니다. 설치가 모두 장소특정적인 것은 아닙니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a></p><p class="note">질문: “다른 건물로 옮겨도 같은 작품이라고 느낄까?”</p></div>
-<div class="concept"><h3>퍼포먼스와 관객 참여</h3><p><strong>퍼포먼스</strong>는 행위와 그 지속시간이 작업의 핵심이 될 수 있는 방식입니다. 관객이 지켜보기만 할 수도, 행동에 참여할 수도 있습니다. 참여가 있다고 반드시 더 자유롭거나 평등한 작품이 되는 것은 아닙니다. 누가 규칙을 정하고 누가 위험을 감수하는지도 봅니다. <a href="#s5">MoMA Learning, Yoko Ono: Cut Piece</a></p><p class="note">질문: “내가 참여하면 작품의 의미나 책임이 어떻게 바뀔까?”</p></div>
-<div class="concept"><h3>맥락, 차용, 제도비판</h3><p><strong>맥락</strong>은 제작 시기, 장소, 전시 방식 등 의미를 읽는 배경입니다. <strong>차용</strong>은 기존 이미지·사물 등을 가져와 사용하는 전략입니다. <strong>제도비판</strong>은 미술관·갤러리 등의 관행과 권위를 질문합니다. 차용을 보았다면 원래 이미지와 무엇이 달라졌는지 살펴봅니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a></p><p class="note">질문: “누가 이걸 전시하기로 정했을까? 그 선택에서 빠진 이야기도 있을까?”</p></div>
 </section>
 <section id="works"><h2>다섯 작품으로 감상 연습하기</h2>
 <p><strong>사실</strong>은 공식 자료로 확인한 작품 정보입니다. <strong>읽어볼 관점</strong>은 가능한 해석과 감상 연습이며, 작가의 유일한 의도나 정답을 뜻하지 않습니다. 작품 이미지는 각 공식 링크에서 확인하세요.</p>
@@ -138,27 +119,62 @@ select:focus-visible{outline:3px solid #8b513a;outline-offset:3px}
 <blockquote><p>“하나를 가져가는 작은 행동이 누군가의 부재와 연결되니 망설여져. 다시 채워지는 건 회복처럼 느껴져, 아니면 상실을 더 또렷하게 할까?”</p></blockquote></article>
 <div class="key"><p><strong>작품들의 공통점:</strong> 물건을 보는 것에서 시작해 선택, 언어, 몸, 기술, 관객의 행동까지 보게 합니다. 다만 이 사례들은 개념·설치·퍼포먼스에 무게를 둔 입문용 선정이며, 현대미술 전체를 대표하지는 않습니다.</p></div>
 </section>
-<section class="visual" id="comparison"><div class="visual-header"><h2><span class="section-kicker">FIVE WORKS, DIFFERENT QUESTIONS</span>작품을 나란히 보면</h2><p>같은 ‘현대미술’ 안에서도 작품의 재료와 관객의 역할은 다릅니다. 점수나 우열 대신, 의미를 만드는 방식을 비교했습니다.</p></div>
-<table class="compare"><caption>작품별 설명을 바탕으로 구성한 학습용 비교. 하나의 작품에 여러 관점이 함께 적용될 수 있습니다.</caption><thead><tr><th scope="col">작품</th><th scope="col">의미를 만드는 방식</th><th scope="col">관객이 살펴볼 것</th><th scope="col">대화를 여는 질문</th></tr></thead><tbody>
-<tr><th scope="row"><a href="#work-duchamp">샘</a></th><td><span class="cell-label" aria-hidden="true">의미를 만드는 방식</span>선택과 제시</td><td><span class="cell-label" aria-hidden="true">관객이 살펴볼 것</span>일상 사물이 놓이는 맥락</td><td><span class="cell-label" aria-hidden="true">대화를 여는 질문</span>같은 물건이 왜 여기선 다르게 보일까?</td></tr>
-<tr><th scope="row"><a href="#work-kosuth">하나이자 세 개의 의자</a></th><td><span class="cell-label" aria-hidden="true">의미를 만드는 방식</span>사물·이미지·정의의 병치</td><td><span class="cell-label" aria-hidden="true">관객이 살펴볼 것</span>서로 닮았지만 같지 않은 표현</td><td><span class="cell-label" aria-hidden="true">대화를 여는 질문</span>어떤 방식이 무엇을 빠뜨릴까?</td></tr>
-<tr><th scope="row"><a href="#work-ono">컷 피스</a></th><td><span class="cell-label" aria-hidden="true">의미를 만드는 방식</span>몸·규칙·행동</td><td><span class="cell-label" aria-hidden="true">관객이 살펴볼 것</span>참여자의 선택과 책임</td><td><span class="cell-label" aria-hidden="true">대화를 여는 질문</span>허용과 동의의 경계는 어디일까?</td></tr>
-<tr><th scope="row"><a href="#work-paik">TV 부처</a></th><td><span class="cell-label" aria-hidden="true">의미를 만드는 방식</span>실시간 영상의 순환</td><td><span class="cell-label" aria-hidden="true">관객이 살펴볼 것</span>보는 대상이 다시 화면에 나타나는 관계</td><td><span class="cell-label" aria-hidden="true">대화를 여는 질문</span>녹화 영상이라면 무엇이 달라질까?</td></tr>
-<tr><th scope="row"><a href="#work-ross">로스의 초상</a></th><td><span class="cell-label" aria-hidden="true">의미를 만드는 방식</span>변화와 나눔</td><td><span class="cell-label" aria-hidden="true">관객이 살펴볼 것</span>사탕을 가져가며 달라지는 더미</td><td><span class="cell-label" aria-hidden="true">대화를 여는 질문</span>내 행동은 이 초상에 무엇을 더할까?</td></tr>
-</tbody></table></section>
-
+<section id="week"><h2>하루 15분, 7일 연습</h2>
+<p>아래는 이 레포트의 학습 제안입니다. 전공 지식을 한 주에 익히려 하기보다, 작품 하나를 구체적으로 이야기할 수 있는 것을 목표로 삼습니다.</p>
+<ol class="steps"><li><strong>첫날 — 감상 언어 만들기.</strong> 집 안의 사물이나 그림 하나에서 색·재료·크기·배치를 묘사하고 느낌 한 문장을 덧붙입니다.</li><li><strong>둘째 날 — 뒤샹.</strong> ‘만드는 일’과 ‘선택하는 일’의 차이를 자기 말 세 문장으로 정리합니다.</li><li><strong>셋째 날 — 코수스.</strong> 휴대전화의 실물, 사진, 사전적 정의를 상상하며 각각 빠뜨리는 것이 무엇인지 적습니다.</li><li><strong>넷째 날 — 오노.</strong> 공식 자료의 기록을 보고, 관객의 행동에 대해 질문 하나를 만듭니다.</li><li><strong>다섯째 날 — 백남준.</strong> 실시간 영상과 녹화 영상을 바꾸면 작품이 어떻게 달라질지 생각해 봅니다.</li><li><strong>여섯째 날 — 곤살레스토레스.</strong> 사탕을 가져가는 행동이 감상에 무엇을 더하는지 말해 봅니다.</li><li><strong>일곱째 날 — 함께 한 작품 보기.</strong> 각자 1분간 보고, 관찰 하나·느낌 하나·질문 하나를 나눕니다. 취향이 달랐던 지점을 하나 찾아봅니다.</li></ol>
+<div class="key"><strong>전시장에 가져갈 메모</strong><p>무엇이 실제로 보이나?<br>왜 이 재료와 이 크기일까?<br>내 몸과 시간은 어떻게 쓰이나?<br>설명을 읽고 달라진 것은 무엇인가?<br>내 해석을 뒷받침하는 단서는 무엇인가?<br>당신은 어떻게 봤어?</p></div>
+<p>다음 단계는 아내분이 좋아하는 작가 한 명을 고르고 작품 세 점을 비교하는 것입니다. 용어를 더 외우기 전에 그 작가가 무엇을 반복하고 어떻게 바꾸는지 함께 찾아보세요.</p>
+</section>
+<section id="visual-map"><h2>DETAILS · 막힐 때 꺼낼 네 가지 질문</h2>
+<p>한 작품에 여러 질문을 함께 적용해도 됩니다. 정답을 고르는 분류가 아니라 관찰을 이어 가는 도구입니다.</p>
+<dl class="viewpoints">
+<div id="lens-form"><dt>형식과 감각 · 재료를 바꾸면?</dt><dd>색·재료·크기·리듬이 주는 느낌을 봅니다. “이 재료를 다른 것으로 바꾸면, 지금의 느낌이 남아 있을까?”</dd><dd><a href="#work-ross">곤살레스토레스의 사탕 초상으로 연습하기</a></dd></div>
+<div id="lens-idea"><dt>생각과 언어 · 무엇을 정의할까?</dt><dd>아이디어·규칙·선택을 봅니다. “실물, 사진, 사전적 정의 중 무엇이 더 의자답게 느껴질까?”</dd><dd><a href="#work-kosuth">코수스의 세 가지 의자로 연습하기</a></dd></div>
+<div id="lens-space"><dt>공간과 참여 · 내가 무엇을 바꿀까?</dt><dd>공간·시간·몸과 관객의 행동을 봅니다. “아무것도 하지 않고 지켜보는 선택도 작품의 일부가 될까?”</dd><dd><a href="#work-ono">오노 요코의 컷 피스로 연습하기</a></dd></div>
+<div id="lens-context"><dt>맥락과 관계 · 누가 의미를 정할까?</dt><dd>역사·제도·권력을 봅니다. “일상 사물을 미술관에 놓으면, 누가 그 의미를 정하게 될까?”</dd><dd><a href="#work-duchamp">뒤샹의 샘으로 연습하기</a></dd></div>
+</dl>
+<p class="note">네 관점과 질문은 이 글의 감상 연습을 위해 구성했습니다.</p></section>
+<section id="scope"><h2>현대미술은 하나의 스타일이 아니다</h2><p class="note">‘현대예술’에는 음악·무용·연극도 포함됩니다. 이 글은 전시장에서 대화를 나누는 데 도움이 되도록 현대미술에 초점을 맞췄습니다. 개념 설명은 입문용으로 단순화했으며, 감상 문장·질문·학습 순서는 이 레포트에서 제안하는 연습입니다.</p>
+<p>‘현대미술’이라는 말은 문맥에 따라 범위가 다릅니다. 한국어에서는 근현대 미술을 넓게 가리키기도 하고, 영어의 <em>contemporary art</em>에 가깝게 쓰기도 합니다. 따라서 “현대미술은 몇 년부터야?”에는 기관과 연구 관점에 따라 다른 답이 나옵니다.</p>
+<p>입문 단계에서는 <strong>근대미술·모던 아트는 전통적 재현과 형식을 새롭게 실험한 역사적 흐름, 동시대미술·컨템퍼러리 아트는 현재와 가까운 과거의 다양한 미술 실천</strong>이라고 잠정적으로 구분하면 편합니다. 경계가 칼로 자르듯 나뉘지는 않습니다. MoMA는 현재 동시대미술을 대략 1980년부터 오늘날까지로 설명하지만, 이를 모든 미술관의 공통 기준으로 보면 안 됩니다. <a href="#s1">MoMA, Contemporary art</a></p>
+<p>추상화만 현대미술인 것도 아닙니다. 사실적인 회화와 조각도 계속 만들어집니다. 영상, 소리, 행위, 일상 사물, 데이터와 관객의 참여까지 작품의 수단이 넓어졌다는 점이 중요합니다. 사회·정치적 문제나 미술 제도 자체를 다루는 작업도 있습니다. <a href="#s1">MoMA, Contemporary art</a></p>
+<blockquote><p>대화의 출발점: “현대미술 전체가 어렵다기보다, 나는 회화는 익숙하고 설치와 퍼포먼스는 아직 낯선 것 같아.”</p></blockquote>
+</section>
+<section id="map"><h2>외울 연표보다, 달라진 질문을 보자</h2>
+<p>아래는 서구 미술사의 일부 흐름을 이해하기 위한 길잡이입니다. 세계 미술이 이 순서로 발전했다는 뜻도, 뒤의 방식이 앞의 방식보다 우월하다는 뜻도 아닙니다. 한국과 다른 지역의 역사는 각자의 정치·사회·문화적 조건과 함께 봐야 합니다.</p>
+<figure aria-labelledby="timeline-title"><h3 id="timeline-title">다섯 작품, 다섯 번의 질문</h3><ol class="timeline">
+<li><span class="year">1917</span><div class="event"><a href="#work-duchamp">뒤샹 · 샘</a><p>기성품을 선택하는 일도 창작일까?</p></div></li>
+<li><span class="year">1964</span><div class="event"><a href="#work-ono">오노 요코 · 컷 피스</a><p>관객이 행동할 때 누가 책임을 질까?</p></div></li>
+<li><span class="year">1965</span><div class="event"><a href="#work-kosuth">코수스 · 하나이자 세 개의 의자</a><p>사물과 사진과 말은 어떻게 다를까?</p></div></li>
+<li><span class="year">1974</span><div class="event"><a href="#work-paik">백남준 · TV 부처</a><p>실시간 화면이 보는 방식을 바꿀까?</p></div></li>
+<li><span class="year">1991</span><div class="event"><a href="#work-ross">곤살레스토레스 · 로스의 초상</a><p>사라지는 재료로 사람을 기억할 수 있을까?</p></div></li></ol>
+<figcaption>선정한 작품의 제작·초연 연도입니다. 현대미술 전체의 시대 구분이나 진보의 순서를 뜻하지 않습니다. 작품별 출처는 아래 해설에 연결되어 있습니다.</figcaption></figure><div class="concept"><h3>재현과 형식에 대한 실험</h3><p>“무엇을 그렸는가?”와 함께 “색·선·구성이 어떻게 작동하는가?”가 중요해집니다. 대상을 닮게 그리지 않아도 리듬, 긴장, 감각을 조직할 수 있습니다. <strong>추상</strong>은 이런 감상의 한 입구입니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a></p></div>
+<div class="concept"><h3>작가의 손에서 작가의 선택으로</h3><p>뒤샹의 레디메이드는 기성품을 작품으로 제시하면서, 작가는 반드시 직접 만들어야 하는지 묻습니다. 회화의 기술을 없애 버렸다기보다 예술적 행위의 범위를 흔든 사례입니다. <a href="#s3">MoMA Learning, Marcel Duchamp and the Readymade</a></p></div>
+<div class="concept"><h3>완성된 물체에서 생각·행위·상황으로</h3><p>개념미술에서는 아이디어와 규칙이, 퍼포먼스에서는 몸과 시간이, 설치에서는 공간의 구성이 중요해질 수 있습니다. 무엇을 샀거나 보존해야 ‘작품’을 소유한 것인지도 복잡해집니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a><a href="#s4">MoMA, Conceptual art</a></p></div>
+<div class="concept"><h3>누가 말하고, 누가 보이는가</h3><p>미술관의 선택, 젠더와 정체성, 역사와 사회적 권력도 감상의 대상이 됩니다. 이때 “작가가 말하고 싶은 주제”와 “그 주제를 구현한 형식”을 함께 봐야 작품을 구체적으로 이야기할 수 있습니다. <a href="#s1">MoMA, Contemporary art</a></p></div>
+<div class="key"><p><strong>이 흐름을 하나로 연결하면:</strong> 작품을 볼 때 대상의 생김새뿐 아니라, 무엇이 선택되고 어떤 관계와 경험이 만들어지는지도 살펴보게 됩니다.</p></div>
+</section>
+<section id="concepts"><h2>대화에 바로 쓰이는 핵심 개념</h2>
+<p>용어는 정답을 맞히는 암호가 아니라 관찰을 돕는 도구입니다. 먼저 쉬운 말로 설명할 수 있으면 충분합니다.</p>
+<div class="concept"><h3>형식과 내용</h3><p><strong>형식</strong>은 색, 크기, 재료, 배치, 소리, 지속시간처럼 작품이 구성되는 방식입니다. <strong>내용</strong>은 작품이 다루는 주제나 의미입니다. “상실을 다룬다”에서 멈추지 않고 “왜 줄어드는 재료를 택했을까?”까지 묻는 데 쓰세요.</p><p class="note">쓸 수 있는 말: “주제보다 반복되는 소리가 먼저 내 몸에 와닿았어.”</p></div>
+<div class="concept"><h3>재현과 추상</h3><p>재현은 사람·사물·장면 등을 나타내는 방식입니다. 추상은 대상을 단순화하거나, 알아볼 수 있는 대상 없이 색·선·면의 관계를 다루기도 합니다. 추상 앞에서 무조건 숨은 사물을 찾을 필요는 없습니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a></p><p class="note">질문: “무엇을 그렸는지 잠시 잊으면, 어디가 무겁고 어디가 움직이는 것 같아?”</p></div>
+<div class="concept"><h3>매체와 물질성</h3><p><strong>매체</strong>는 회화·사진·영상·소리 등 작업을 전달하는 수단입니다. <strong>물질성</strong>은 천의 비침, 금속의 차가움, 종이의 찢어짐처럼 재료가 실제로 주는 성질입니다. 같은 ‘기억’이라는 주제도 돌과 얇은 천은 전혀 다르게 경험될 수 있습니다.</p><p class="note">질문: “이걸 사진 한 장으로 바꾸면 무엇이 사라질까?”</p></div>
+<div class="concept"><h3>레디메이드와 개념미술</h3><p><strong>레디메이드</strong>는 기존 사물을 선택해 예술로 제시하는 작업과 연결됩니다. <strong>개념미술</strong>은 아이디어나 개념에 큰 비중을 두는 미술입니다. 둘은 관련되지만 같은 말은 아닙니다. 모든 개념미술이 기성품을 쓰는 것은 아닙니다. <a href="#s3">MoMA Learning, Marcel Duchamp and the Readymade</a><a href="#s4">MoMA, Conceptual art</a></p><p class="note">질문: “여기서 작품의 핵심은 사물 자체일까, 선택과 제시 방식일까?”</p></div>
+<div class="concept"><h3>설치와 장소특정성</h3><p><strong>설치</strong>는 사물·영상·소리 등을 공간에 구성하여 경험하게 하는 작업을 말합니다. <strong>장소특정성</strong>은 특정 장소의 구조·역사·사회적 맥락이 작품에 중요한 경우를 이해하는 개념입니다. 설치가 모두 장소특정적인 것은 아닙니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a></p><p class="note">질문: “다른 건물로 옮겨도 같은 작품이라고 느낄까?”</p></div>
+<div class="concept"><h3>퍼포먼스와 관객 참여</h3><p><strong>퍼포먼스</strong>는 행위와 그 지속시간이 작업의 핵심이 될 수 있는 방식입니다. 관객이 지켜보기만 할 수도, 행동에 참여할 수도 있습니다. 참여가 있다고 반드시 더 자유롭거나 평등한 작품이 되는 것은 아닙니다. 누가 규칙을 정하고 누가 위험을 감수하는지도 봅니다. <a href="#s5">MoMA Learning, Yoko Ono: Cut Piece</a></p><p class="note">질문: “내가 참여하면 작품의 의미나 책임이 어떻게 바뀔까?”</p></div>
+<div class="concept"><h3>맥락, 차용, 제도비판</h3><p><strong>맥락</strong>은 제작 시기, 장소, 전시 방식 등 의미를 읽는 배경입니다. <strong>차용</strong>은 기존 이미지·사물 등을 가져와 사용하는 전략입니다. <strong>제도비판</strong>은 미술관·갤러리 등의 관행과 권위를 질문합니다. 차용을 보았다면 원래 이미지와 무엇이 달라졌는지 살펴봅니다. <a href="#s2">MoMA Learning, Glossary of Art Terms</a></p><p class="note">질문: “누가 이걸 전시하기로 정했을까? 그 선택에서 빠진 이야기도 있을까?”</p></div>
+</section>
+<section id="comparison"><h2>작품별 질문을 다시 고르면</h2><dl class="work-comparison"><div><dt><a href="#work-duchamp">샘</a></dt><dd><strong>의미를 만드는 방식:</strong> 선택과 제시</dd><dd><strong>살펴볼 것:</strong> 일상 사물이 놓이는 맥락</dd><dd><strong>질문:</strong> 같은 물건이 왜 여기선 다르게 보일까?</dd></div>
+<div><dt><a href="#work-kosuth">하나이자 세 개의 의자</a></dt><dd><strong>의미를 만드는 방식:</strong> 사물·이미지·정의의 병치</dd><dd><strong>살펴볼 것:</strong> 서로 닮았지만 같지 않은 표현</dd><dd><strong>질문:</strong> 어떤 방식이 무엇을 빠뜨릴까?</dd></div>
+<div><dt><a href="#work-ono">컷 피스</a></dt><dd><strong>의미를 만드는 방식:</strong> 몸·규칙·행동</dd><dd><strong>살펴볼 것:</strong> 참여자의 선택과 책임</dd><dd><strong>질문:</strong> 허용과 동의의 경계는 어디일까?</dd></div>
+<div><dt><a href="#work-paik">TV 부처</a></dt><dd><strong>의미를 만드는 방식:</strong> 실시간 영상의 순환</dd><dd><strong>살펴볼 것:</strong> 보는 대상이 다시 화면에 나타나는 관계</dd><dd><strong>질문:</strong> 녹화 영상이라면 무엇이 달라질까?</dd></div>
+<div><dt><a href="#work-ross">로스의 초상</a></dt><dd><strong>의미를 만드는 방식:</strong> 변화와 나눔</dd><dd><strong>살펴볼 것:</strong> 사탕을 가져가며 달라지는 더미</dd><dd><strong>질문:</strong> 내 행동은 이 초상에 무엇을 더할까?</dd></div></dl><p class="note">작품 해설을 바탕으로 구성한 학습용 비교이며 하나의 작품에 여러 관점이 적용될 수 있습니다.</p></section>
 <section id="questions"><h2>낯설 때 떠오르는 의문들</h2>
 <details open><summary>“나도 만들 수 있을 것 같은데?”</summary><p>물리적으로 비슷하게 만드는 난이도와 예술적 성취는 별개의 평가 항목입니다. 어떤 시점에 무엇을 새롭게 제안했는지, 선택한 형식이 질문을 얼마나 설득력 있게 경험하게 하는지 볼 수 있습니다. 그렇다고 쉬워 보이는 작품을 무조건 높이 평가해야 하는 것은 아닙니다. “무엇이 새롭고 왜 효과적인지 아직 모르겠다”는 비판도 가능합니다.</p></details>
 <details open><summary>“설명을 읽어야 하면 작품이 실패한 것 아닐까?”</summary><p>시각적·신체적 경험만으로 강하게 작동하는 작업도 있고, 언어나 역사적 정보와 함께 작동하는 작업도 있습니다. 설명이 작품을 확장하는지, 작품에 없는 의미를 대신 떠받치는지 구분해 보세요. “설명은 흥미로운데 이 형식이어야 할 이유는 약하게 느껴진다”는 구체적인 평가입니다.</p></details>
 <details open><summary>“해석은 아무렇게나 해도 될까?”</summary><p>자유롭게 출발하되 관찰과 맥락으로 점검하면 좋습니다. 작가의 의도, 미술관의 설명, 관객의 해석은 서로 겹칠 수 있지만 같은 것은 아닙니다. 다른 해석을 만났을 때 “어떤 단서가 그 생각을 뒷받침하지?”라고 묻는 편이 정답 경쟁보다 생산적입니다.</p></details>
 <details open><summary>“비싸면 좋은 작품일까?”</summary><p>가격과 작품의 가치는 하나의 척도가 아닙니다. 감상할 때는 시장 가격을 모른 채 형식의 힘, 질문의 깊이, 역사적 의미, 개인적 울림을 각각 생각해 볼 수 있습니다. “미술사적으로 중요한 것은 알겠는데 나는 좋아하지 않는다”도 모순된 말이 아닙니다.</p></details>
 <details open><summary>“불편하거나 정치적인 작품도 좋아해야 할까?”</summary><p>좋아할 의무는 없습니다. 불편함이 어디서 오는지 살피되 작품의 주장과 표현 방식을 따로 평가할 수 있습니다. 좋은 주제라는 이유만으로 좋은 작품이 되지는 않습니다. 반대로 불편하다는 이유만으로 성취가 사라지는 것도 아닙니다.</p></details>
-</section>
-<section id="week"><h2>하루 15분, 7일 연습</h2>
-<p>아래는 이 레포트의 학습 제안입니다. 전공 지식을 한 주에 익히려 하기보다, 작품 하나를 구체적으로 이야기할 수 있는 것을 목표로 삼습니다.</p>
-<ol class="steps"><li><strong>첫날 — 감상 언어 만들기.</strong> 집 안의 사물이나 그림 하나에서 색·재료·크기·배치를 묘사하고 느낌 한 문장을 덧붙입니다.</li><li><strong>둘째 날 — 뒤샹.</strong> ‘만드는 일’과 ‘선택하는 일’의 차이를 자기 말 세 문장으로 정리합니다.</li><li><strong>셋째 날 — 코수스.</strong> 휴대전화의 실물, 사진, 사전적 정의를 상상하며 각각 빠뜨리는 것이 무엇인지 적습니다.</li><li><strong>넷째 날 — 오노.</strong> 공식 자료의 기록을 보고, 관객의 행동에 대해 질문 하나를 만듭니다.</li><li><strong>다섯째 날 — 백남준.</strong> 실시간 영상과 녹화 영상을 바꾸면 작품이 어떻게 달라질지 생각해 봅니다.</li><li><strong>여섯째 날 — 곤살레스토레스.</strong> 사탕을 가져가는 행동이 감상에 무엇을 더하는지 말해 봅니다.</li><li><strong>일곱째 날 — 함께 한 작품 보기.</strong> 각자 1분간 보고, 관찰 하나·느낌 하나·질문 하나를 나눕니다. 취향이 달랐던 지점을 하나 찾아봅니다.</li></ol>
-<div class="key"><strong>전시장에 가져갈 메모</strong><p>무엇이 실제로 보이나?<br>왜 이 재료와 이 크기일까?<br>내 몸과 시간은 어떻게 쓰이나?<br>설명을 읽고 달라진 것은 무엇인가?<br>내 해석을 뒷받침하는 단서는 무엇인가?<br>당신은 어떻게 봤어?</p></div>
-<p>다음 단계는 아내분이 좋아하는 작가 한 명을 고르고 작품 세 점을 비교하는 것입니다. 용어를 더 외우기 전에 그 작가가 무엇을 반복하고 어떻게 바꾸는지 함께 찾아보세요.</p>
 </section>
 <section id="sources"><h2>출처와 읽는 범위</h2>
 <p class="note">미술관과 작가 재단의 공개 자료를 바탕으로 재서술했습니다. 아래 링크는 원문과 작품 이미지를 확인하는 곳입니다. 감상 질문과 예시 대화는 직접 구성했으며 작품의 공식 해설과 구분했습니다. 작품 이미지는 이 페이지에 복제하지 않았습니다.</p>
@@ -174,25 +190,16 @@ select:focus-visible{outline:3px solid #8b513a;outline-offset:3px}
 <li id="s9"><a href="https://www.felixgonzalez-torresfoundation.org/works/untitled-portrait-of-ross-in-l-a">Felix Gonzalez-Torres Foundation, “Untitled” (Portrait of Ross in L.A.)</a> — 1991년, 사탕, 이상적 무게와 가변적 설치.</li>
 <li id="s10"><a href="https://www.saic.edu/news/about-work-3">School of the Art Institute of Chicago, About a Work</a> — 로스 레이콕과 사탕 초상의 배경.</li>
 </ol></section>
+
+
+
+
+
+
+
+
+
+
+
 <footer><p>목표는 전문가처럼 말하는 것이 아니라, 함께 본 것에 대해 자신의 말로 이야기하는 것입니다.</p><a class="back" href="../../">보고서 목록</a> <button type="button" onclick="window.print()">인쇄 / PDF 저장</button></footer>
-</main><script>
-(function(){
-const data={
-form:{title:"형식과 감각으로 보기",question:"“이 재료를 다른 것으로 바꾸면, 지금의 느낌이 남아 있을까?”",link:"#work-ross",name:"연습 작품: 곤살레스토레스의 사탕 초상"},
-idea:{title:"생각과 언어로 보기",question:"“실물, 사진, 사전적 정의 중 무엇이 더 의자답게 느껴질까?”",link:"#work-kosuth",name:"연습 작품: 코수스의 하나이자 세 개의 의자"},
-space:{title:"공간과 참여로 보기",question:"“아무것도 하지 않고 지켜보는 선택도 작품의 일부가 될까?”",link:"#work-ono",name:"연습 작품: 오노 요코의 컷 피스"},
-context:{title:"맥락과 관계로 보기",question:"“일상 사물을 미술관에 놓으면, 누가 그 의미를 정하게 될까?”",link:"#work-duchamp",name:"연습 작품: 뒤샹의 샘"}};
-const controls=document.getElementById("lens-controls");
-controls.hidden=false;
-controls.addEventListener("click",function(event){
-const button=event.target.closest("button[data-lens]");
-if(!button)return;
-const key=button.dataset.lens, item=data[key];
-controls.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",String(b===button));});
-document.querySelectorAll(".lens-grid article").forEach(function(a){a.dataset.active=String(a.id==="lens-"+key);});
-document.getElementById("lens-title").textContent=item.title;
-document.getElementById("lens-question").textContent=item.question;
-const link=document.getElementById("lens-link");link.href=item.link;link.textContent=item.name;
-});
-})();
-</script></body></html>
+</main></body></html>
