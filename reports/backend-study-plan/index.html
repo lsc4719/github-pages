@@ -41,16 +41,22 @@ select:focus-visible{outline:3px solid #8b513a;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{nav,.jump-nav{display:none!important}details::details-content{content-visibility:visible;display:block}h1{font-size:24pt}}
 .hero-inner,.nav-inner,main,footer{max-width:46rem}.nav-inner{flex-wrap:wrap;gap:.1rem 1.2rem}@media(max-width:760px){main{padding-left:0;padding-right:0}}
+
+.reading-links{display:flex;flex-wrap:wrap;gap:.2rem 1.25rem;position:static;padding:.65rem 0;margin:0;border-block:1px solid var(--line)}
+.reading-links a{display:inline-flex;align-items:center;min-height:44px;padding:.15rem 0;font-size:1rem;text-decoration:underline}
+@media(max-width:480px){.reading-links{display:block}.reading-links a{display:flex}}
+@media print{.reading-links{display:none!important}}
+.reading-links{width:min(46rem,calc(100% - 2rem));margin:auto}
 </style>
 </head>
 <body>
 <header class="hero"><div class="hero-inner"><div class="masthead"><a href="../../">보고서 목록</a><span>2026.11.24</span></div><h1>API 하나로,<br><em>Spring부터 DB까지.</em></h1><p class="lead">Spring 7장부터 학습 기록 API를 만드세요. 요청 처리·저장·트랜잭션을 같은 코드로 익힙니다.</p><p class="meta">8주 계획 · 주 3시간 가정</p><div class="today"><p><strong>오늘 25분</strong> · 7장 예제 실행 후 요청 경로를 3문장으로 설명하세요.</p><a href="../spring-start-here-chapter-7/">7장 요약</a></div></div></header>
-<nav class="report-nav" aria-label="목차"><div class="nav-inner"><a href="#plan">학습 계획</a><a href="#model">핵심 개념</a><a href="#routine">주간 루틴</a><a href="#restart">진도 조정</a><a href="#position">현재 진도</a><a href="#references">참고자료</a></div></nav>
+<nav class="reading-links" aria-label="주요 구간"><a href="#plan">8주 실행 계획</a><a href="#model">핵심 개념</a><a href="#restart">막힐 때 조정</a></nav>
 <main>
 <section id="plan"><h2>8주 계획</h2>
 
 <p class="scope">항목 생성 · 단건 조회 · 완료 처리</p>
-<div class="jump-control" hidden><label for="week-jump">주차로 이동</label><select id="week-jump"><option value="">주차 선택</option><option value="week-1">1주 · 요청 하나를 추적하기</option><option value="week-2">2주 · 생성·조회·완료 처리</option><option value="week-3">3주 · PostgreSQL에 저장하기</option><option value="week-4">4주 · 두 쓰기를 함께 롤백하기</option><option value="week-5">5주 · 두 세션의 동시 접근 비교</option><option value="week-6">6주 · 조회 실행 계획 비교</option><option value="week-7">7주 · 조회 하나만 JPA로 교체</option><option value="week-8">8주 · 실패를 검증하고 재실행하기</option></select></div>
+
 <article class="week" id="week-1" aria-labelledby="week-title-1"><div class="week-head"><p class="tag">1주</p><h3 id="week-title-1">요청 하나를 추적하기</h3></div><div class="week-body"><dl><dt>읽기</dt><dd>Spring Start Here 7장.</dd><dt>실습</dt><dd>7장 예제를 실행하고 <code>GET /study-items/1</code>에 고정 JSON을 반환합니다. Controller에 중단점 또는 로그를 남깁니다.</dd></dl><p class="done"><strong>완료</strong> · 응답 하나 저장. Tomcat·DispatcherServlet·Controller의 역할을 3문장으로 설명.</p></div></article><article class="week" id="week-2" aria-labelledby="week-title-2"><div class="week-head"><p class="tag">2주</p><h3 id="week-title-2">생성·조회·완료 처리</h3></div><div class="week-body"><dl><dt>읽기</dt><dd>Spring Start Here의 REST 부분, Spring MVC 요청 매핑.</dd><dt>실습</dt><dd>메모리 저장으로 <code>POST /study-items</code>·<code>GET /study-items/{id}</code>·<code>PATCH /study-items/{id}</code>를 구현합니다. 빈 제목과 없는 ID에 대한 응답도 정합니다.</dd></dl><p class="done"><strong>완료</strong> · 정상 생성 201, 빈 제목 400, 없는 ID 404를 요청으로 확인.</p></div></article><article class="week" id="week-3" aria-labelledby="week-title-3"><div class="week-head"><p class="tag">3주</p><h3 id="week-title-3">PostgreSQL에 저장하기</h3></div><div class="week-body"><dl><dt>읽기</dt><dd>Spring Start Here의 데이터 소스·JDBC 부분.</dd><dt>실습</dt><dd>테이블을 만들고 INSERT·SELECT·UPDATE를 직접 실행합니다. 메모리 저장을 JdbcTemplate으로 교체합니다.</dd></dl><p class="done"><strong>완료</strong> · 앱 재시작 후 생성한 항목을 조회. 환경 준비가 막히면 이 주차를 연장.</p></div></article><article class="week" id="week-4" aria-labelledby="week-title-4"><div class="week-head"><p class="tag">4주</p><h3 id="week-title-4">두 쓰기를 함께 롤백하기</h3></div><div class="week-body"><dl><dt>읽기</dt><dd>Spring Start Here의 트랜잭션 부분, <code>@Transactional</code>의 프록시·롤백 규칙.</dd><dt>실습</dt><dd>완료 상태 UPDATE와 변경 기록 INSERT를 한 서비스 메서드로 묶습니다. 두 쓰기 사이에 RuntimeException을 던집니다.</dd></dl><p class="done"><strong>완료</strong> · 서비스 빈을 외부에서 호출한 뒤 두 테이블 조회. 실패 시 두 변경이 모두 취소됨을 확인.</p></div></article><article class="week" id="week-5" aria-labelledby="week-title-5"><div class="week-head"><p class="tag">5주</p><h3 id="week-title-5">두 세션의 동시 접근 비교</h3></div><div class="week-body"><dl><dt>읽기</dt><dd>PostgreSQL의 Read Committed·Repeatable Read·행 잠금.</dd><dt>실습</dt><dd>두 DB 세션에서 반복 SELECT와 동시 UPDATE를 실행합니다. 격리 수준을 바꾸고 COMMIT/ROLLBACK 전후를 비교합니다.</dd></dl><p class="done"><strong>완료</strong> · 세션 A/B 실행 순서·조회 결과·잠금 대기 기록 하나.</p></div></article><article class="week" id="week-6" aria-labelledby="week-title-6"><div class="week-head"><p class="tag">6주</p><h3 id="week-title-6">조회 실행 계획 비교</h3></div><div class="week-body"><dl><dt>읽기</dt><dd>PostgreSQL Using EXPLAIN.</dd><dt>실습</dt><dd>수만 건을 넣고 ANALYZE 후 조회 계획을 저장합니다. 같은 쿼리에 맞는 인덱스 하나를 추가해 다시 비교합니다.</dd></dl><p class="done"><strong>완료</strong> · 전후 계획 2개. 인덱스 사용 여부를 데이터 선택도와 연결해 설명.</p></div></article><article class="week" id="week-7" aria-labelledby="week-title-7"><div class="week-head"><p class="tag">7주</p><h3 id="week-title-7">조회 하나만 JPA로 교체</h3></div><div class="week-body"><dl><dt>읽기</dt><dd>Hibernate의 단일 엔티티·영속성 컨텍스트·flush, Spring Data JPA 단건 조회.</dd><dt>실습</dt><dd>엔티티 하나와 단건 조회를 구현합니다. SQL 로그를 켜고 JDBC 조회와 비교합니다.</dd></dl><p class="done"><strong>완료</strong> · Java 코드와 실제 SQL 비교. 여유가 있으면 같은 트랜잭션 안의 변경 감지 확인.</p></div></article><article class="week" id="week-8" aria-labelledby="week-title-8"><div class="week-head"><p class="tag">8주</p><h3 id="week-title-8">실패를 검증하고 재실행하기</h3></div><div class="week-body"><dl><dt>읽기</dt><dd>Spring Start Here의 단위·통합 테스트 부분.</dd><dt>실습</dt><dd>빈 제목 거절·생성 후 조회·서비스 롤백을 테스트합니다. 앱·DB·테스트 실행법을 README에 적고 재실행합니다.</dd></dl><p class="done"><strong>완료</strong> · API 실행법과 테스트 결과. 롤백은 서비스 호출 뒤 새 DB 연결로 확인해 테스트 자체의 자동 롤백과 구분.</p></div></article>
 </section>
 <section id="model"><h2>핵심 개념</h2><div class="model-grid">
@@ -88,14 +94,6 @@ select:focus-visible{outline:3px solid #8b513a;outline-offset:3px}
 <li><a href="https://docs.hibernate.org/orm/current/userguide/html_single/">Hibernate ORM</a><br><a href="https://docs.spring.io/spring-data/jpa/reference/">Spring Data JPA</a></li>
 </ul><p class="small">실습 프로젝트 버전에 맞는 문서를 사용하세요. 학습 기록 저장소는 접근 권한이 필요합니다.</p>
 <a href="../../">보고서 목록</a></footer>
-<script>
-(()=>{
-const jump=document.getElementById('week-jump');
-jump.parentElement.hidden=false;
-function sync(){jump.value=/^#week-[1-8]$/.test(location.hash)?location.hash.slice(1):'';}
-jump.addEventListener('change',()=>{if(!jump.value)return;const target=document.getElementById(jump.value);location.hash=jump.value;const title=target.querySelector('h3');title.setAttribute('tabindex','-1');title.focus({preventScroll:true});});
-window.addEventListener('hashchange',sync);sync();
-})();
-</script>
+
 </body>
 </html>
