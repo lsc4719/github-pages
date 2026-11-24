@@ -68,6 +68,13 @@ button{font:inherit;min-height:44px;padding:.4rem .75rem;color:var(--ink);backgr
 @media(min-width:48rem){main{padding-top:1rem}h1{font-size:2.5rem}h2{font-size:1.75rem}.reading-links{display:flex;gap:1.5rem}.reading-links a{display:inline-flex}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{html{scroll-behavior:auto}body{background:white;color:black;font-size:11pt}main{width:100%;padding:0}.back,nav,button{display:none}section{padding:1rem 0}h1{font-size:24pt}h2,h3{break-after:avoid}blockquote,.concept-triptych,.viewpoints>div{break-inside:avoid}a{color:inherit}details::details-content{content-visibility:visible;display:block}}
+.artwork-image{margin:1rem 0 1.25rem}
+.artwork-image>a{display:block;width:fit-content;max-width:100%}
+.artwork-image img{display:block;width:auto;max-width:100%;height:auto}
+.artwork-image.portrait img{max-width:min(100%,28rem)}
+.artwork-image figcaption{line-height:1.6}
+.photo-credit{font-size:1rem}
+@media print{.artwork-image{break-inside:avoid}.artwork-image img{width:auto;max-width:100%;max-height:90mm}.artwork-image.portrait img{max-width:100%}}
 </style></head>
 <body><main>
 <div class="topline"><a class="back" href="../../">보고서 목록</a></div>
@@ -95,25 +102,30 @@ button{font:inherit;min-height:44px;padding:.4rem .75rem;color:var(--ink);backgr
 <p>대화가 막히면 “이게 좋은 작품이야?”를 조금 더 구체화해 보세요. “이 재료 선택이 주제를 더 강하게 만들어?”, “실제로 와서 보니 사진과 무엇이 달라?” 같은 질문은 상대에게 자신의 경험을 말할 여지를 줍니다.</p>
 </section>
 <section id="works"><h2>다섯 작품으로 감상 연습하기</h2>
-<p><strong>사실</strong>은 공식 자료로 확인한 작품 정보입니다. <strong>읽어볼 관점</strong>은 가능한 해석과 감상 연습이며, 작가의 유일한 의도나 정답을 뜻하지 않습니다. 작품 이미지는 각 공식 링크에서 확인하세요.</p>
+<p><strong>사실</strong>은 공식 자료로 확인한 작품 정보입니다. <strong>읽어볼 관점</strong>은 가능한 해석과 감상 연습이며, 작가의 유일한 의도나 정답을 뜻하지 않습니다. 작품 사진과 해설을 함께 보되, 원작의 연도와 사진의 촬영 시점은 구분해 읽으세요.</p>
 <article class="work" id="work-duchamp"><p class="label">선택도 창작이 될 수 있을까</p><h3>마르셀 뒤샹, 〈샘〉, 1917</h3>
+<figure class="artwork-image portrait"><a href="./images/fountain.webp" aria-label="R. Mutt 1917 서명이 있는 소변기를 받침 위에 놓은 〈샘〉의 흑백 기록 사진 — 이미지 크게 보기"><img src="./images/fountain.webp" alt="R. Mutt 1917 서명이 있는 소변기를 받침 위에 놓은 〈샘〉의 흑백 기록 사진" width="960" height="1012" decoding="async"></a><figcaption>마르셀 뒤샹, 〈샘〉, 1917. Alfred Stieglitz가 촬영한 당시 기록 사진입니다. 원작은 소실되었습니다.<br><span class="photo-credit">사진 Alfred Stieglitz · 미국 퍼블릭 도메인 · <a href="https://commons.wikimedia.org/wiki/File:Duchamp_Fountaine.jpg">이미지 출처</a></span></figcaption></figure>
 <p><strong>사실:</strong> 소변기를 일상 용도에서 벗어나 예술로 제시한 대표적인 레디메이드입니다. 원작은 소실되었으며 미술관에서 보는 판본의 제작 연도는 원작 연도와 다를 수 있습니다. <a href="https://www.moma.org/momaorg/shared/flattened_pages/moma_learning/themes/dada/marcel-duchamp-and-the-readymade/">MoMA 설명</a> · <a href="#s3">MoMA Learning, Marcel Duchamp and the Readymade</a><a href="#s6">Tate, Marcel Duchamp: Fountain</a></p>
 <p><strong>읽어볼 관점:</strong> ‘잘 만들었다’는 평가에서 ‘어떤 선택이 예술의 기준을 흔들었는가’로 질문을 이동시켜 봅니다. 역사적 사건의 중요성과 지금 내 눈에 흥미로운지는 따로 판단할 수 있습니다.</p>
 <blockquote><p>“만드는 기술보다, 어떤 물건을 어떤 상황에 내놓았는지가 핵심처럼 보여. 지금 같은 행동을 해도 똑같이 새로울까?”</p></blockquote></article>
 <article class="work" id="work-kosuth"><p class="label">사물, 이미지, 말의 차이</p><h3>조지프 코수스, 〈하나이자 세 개의 의자〉, 1965</h3>
+<figure class="artwork-image"><a href="./images/one-and-three-chairs.webp" aria-label="벽 왼쪽의 의자 사진, 가운데 놓인 실제 의자, 오른쪽의 사전적 정의가 함께 설치된 모습 — 이미지 크게 보기"><img src="./images/one-and-three-chairs.webp" alt="벽 왼쪽의 의자 사진, 가운데 놓인 실제 의자, 오른쪽의 사전적 정의가 함께 설치된 모습" width="960" height="621" decoding="async"></a><figcaption>조지프 코수스, 〈하나이자 세 개의 의자〉, 1965. 전시 설치 사진으로, 2010년에 촬영했습니다.<br><span class="photo-credit">사진 Gautier Poupeau · CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:One_and_Three_Chair.jpg">이미지 출처</a> · <a href="https://creativecommons.org/licenses/by/2.0/">이용 조건</a></span></figcaption></figure>
 <p><strong>사실:</strong> 실제 의자, 그 의자의 사진, ‘의자’의 사전적 정의가 함께 놓입니다. <a href="https://www.moma.org/collection/works/81435">MoMA 작품 보기</a> · <a href="#s7">MoMA, Joseph Kosuth: One and Three Chairs</a></p>
-<figure><div class="concept-triptych"><div><span class="type" aria-hidden="true">Object</span><strong>실제 의자</strong><p>사용할 수 있는 사물</p></div><div><span class="type" aria-hidden="true">Image</span><strong>의자의 사진</strong><p>특정 모습의 시각적 기록</p></div><div><span class="type" aria-hidden="true">Word</span><strong>‘의자’의 정의</strong><p>범주를 설명하는 언어</p></div></div><figcaption>코수스 작품의 세 구성 요소를 비교한 개념 도식입니다. 작품 이미지의 재현은 아닙니다. <a href="#s7">MoMA, Joseph Kosuth: One and Three Chairs</a></figcaption></figure><p><strong>읽어볼 관점:</strong> 셋은 같은 것을 가리키지만 같은 방식으로 존재하지 않습니다. 실물과 이미지와 언어가 무엇을 보여 주고 무엇을 빠뜨리는지 비교해 보세요. ‘의자가 세 개’라는 수수께끼의 정답을 찾기보다 표현 방식의 차이를 경험하는 연습입니다.</p>
+<p><strong>읽어볼 관점:</strong> 셋은 같은 것을 가리키지만 같은 방식으로 존재하지 않습니다. 실물과 이미지와 언어가 무엇을 보여 주고 무엇을 빠뜨리는지 비교해 보세요. ‘의자가 세 개’라는 수수께끼의 정답을 찾기보다 표현 방식의 차이를 경험하는 연습입니다.</p>
 <blockquote><p>“실물은 앉을 수 있고, 사진은 특정 시점을 보여 주고, 정의는 여러 의자를 포괄하네. 셋 중 무엇이 더 ‘의자답다’고 느껴져?”</p></blockquote></article>
 <article class="work" id="work-ono"><p class="label">몸, 규칙, 관객의 책임</p><h3>오노 요코, 〈컷 피스〉, 1964 초연</h3>
+<figure class="artwork-image portrait"><a href="./images/cut-piece.webp" aria-label="일부가 잘린 옷을 입고 무대 바닥에 앉아 있는 오노 요코와 주변의 천 조각 — 이미지 크게 보기"><img src="./images/cut-piece.webp" alt="일부가 잘린 옷을 입고 무대 바닥에 앉아 있는 오노 요코와 주변의 천 조각" width="317" height="395" decoding="async"></a><figcaption>오노 요코, 〈컷 피스〉, 1964 초연. 사진은 1965년 뉴욕 Carnegie Recital Hall 공연의 기록입니다.<br><span class="photo-credit">© Yoko Ono · 사진 Minoru Niizuma · MoMA Learning · <a href="https://www.moma.org/momaorg/shared/flattened_pages/moma_learning/yoko-ono-cut-piece-1964/">이미지 출처</a></span></figcaption></figure>
 <p><strong>사실:</strong> 관객이 차례로 무대에 올라 수행자의 옷 일부를 가위로 잘라 가져가도록 한 작업입니다. 1964년 교토에서 초연되었으며 널리 알려진 뉴욕 공연 사진은 1965년의 기록입니다. <a href="https://www.moma.org/momaorg/shared/flattened_pages/moma_learning/yoko-ono-cut-piece-1964/">MoMA 설명과 기록</a> · <a href="#s5">MoMA Learning, Yoko Ono: Cut Piece</a></p>
 <p><strong>읽어볼 관점:</strong> 취약한 몸, 젠더와 권력, 주고받음, 관객의 선택을 함께 생각할 수 있습니다. 여러 해석이 가능하며 하나의 메시지로 고정할 필요가 없습니다. 사진만 볼 때와 행위의 지속시간을 볼 때 느낌이 어떻게 달라질지도 생각해 봅니다.</p>
 <blockquote><p>“참여를 허락받았다는 것과 어디까지 해도 되는지는 다른 문제처럼 느껴져. 아무것도 자르지 않는 선택도 이 작품의 일부가 될까?”</p></blockquote></article>
 <article class="work" id="work-paik"><p class="label">기술이 보는 방식을 바꿀 때</p><h3>백남준, 〈TV 부처〉, 1974</h3>
+<figure class="artwork-image"><a href="./images/tv-buddha.webp" aria-label="불상이 마주한 TV에 자신의 모습이 보이고 뒤쪽 카메라가 불상을 촬영하는 설치 — 이미지 크게 보기"><img src="./images/tv-buddha.webp" alt="불상이 마주한 TV에 자신의 모습이 보이고 뒤쪽 카메라가 불상을 촬영하는 설치" width="960" height="720" decoding="async"></a><figcaption>백남준, 〈TV 부처〉 연작의 전시 모습. 사진은 2009년 촬영이며, 연작의 시작은 1974년입니다.<br><span class="photo-credit">사진 Angus Fraser · CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:TV_Buddha.jpg">이미지 출처</a> · <a href="https://creativecommons.org/licenses/by/2.0/">이용 조건</a></span></figcaption></figure>
 <p><strong>사실:</strong> 불상이 폐쇄회로 영상 시스템을 통해 자신의 실시간 모습을 바라봅니다. 백남준은 이후에도 부처와 영상 장치를 활용한 여러 작업을 만들었으므로 개별 전시의 연도와 구성을 확인해야 합니다. <a href="https://americanart.si.edu/research/paik/highlights">스미스소니언 자료</a> · <a href="#s8">Smithsonian American Art Museum, Highlights from the Nam June Paik Archive Collection</a></p>
 <p><strong>읽어볼 관점:</strong> 오래된 종교적 형상과 전자 매체의 만남, 자기 관찰과 화면의 순환을 볼 수 있습니다. 여기서 TV는 단순한 액자가 아니라 작품의 관계를 만드는 장치입니다.</p>
 <blockquote><p>“명상하는 것 같기도 하고 자기 화면에 갇힌 것 같기도 해. 이걸 녹화 영상으로 바꾸면 어떤 차이가 생길까?”</p></blockquote>
 <p class="note">스마트폰의 자기 이미지와 연결하는 것은 오늘날 관객으로서 해 볼 수 있는 비유입니다. 작품이 스마트폰을 예언했다고 단정할 근거는 아닙니다.</p></article>
 <article class="work" id="work-ross"><p class="label">사라지는 재료로 남기는 초상</p><h3>펠릭스 곤살레스토레스, 〈무제〉(로스의 초상, L.A.), 1991</h3>
+<figure class="artwork-image"><a href="./images/portrait-of-ross.webp" aria-label="전시장 구석에 쌓인 색색의 포장 사탕 더미에서 한 관객이 사탕을 집어 가는 모습 — 이미지 크게 보기"><img src="./images/portrait-of-ross.webp" alt="전시장 구석에 쌓인 색색의 포장 사탕 더미에서 한 관객이 사탕을 집어 가는 모습" width="960" height="722" decoding="async"></a><figcaption>펠릭스 곤살레스토레스, 〈무제〉(로스의 초상, L.A.), 1991. 관객이 사탕을 가져가는 장면으로, 2013년에 촬영했습니다.<br><span class="photo-credit">사진 Mark Mauno · CC BY 2.0 · <a href="https://commons.wikimedia.org/wiki/File:%22Untitled%22_(Portrait_of_Ross_in_L.A.)_by_Felix_Gonzalez-Torres.jpg">이미지 출처</a> · <a href="https://creativecommons.org/licenses/by/2.0/">이용 조건</a></span></figcaption></figure>
 <p><strong>사실:</strong> 여러 색 포장지의 사탕으로 구성되며 이상적 무게는 175파운드, 약 79.4kg입니다. 제목의 로스는 작가의 연인 로스 레이콕입니다. 관객이 사탕을 가져가며 더미가 변하는 작업으로, 보충과 설치의 조건도 중요합니다. <a href="https://www.felixgonzalez-torresfoundation.org/works/untitled-portrait-of-ross-in-l-a">작가 재단 작품 정보</a> · <a href="#s9">Felix Gonzalez-Torres Foundation, “Untitled” (Portrait of Ross in L.A.)</a><a href="#s10">School of the Art Institute of Chicago, About a Work</a></p>
 <p><strong>읽어볼 관점:</strong> 얼굴을 닮게 만들지 않고도 몸과 사랑, 상실을 떠올리게 할 수 있습니다. 사탕의 달콤함과 더미가 줄어드는 경험이 동시에 작동합니다. ‘사탕=슬픔’이라는 고정된 암호보다 변화와 나눔의 과정을 살펴보세요.</p>
 <blockquote><p>“하나를 가져가는 작은 행동이 누군가의 부재와 연결되니 망설여져. 다시 채워지는 건 회복처럼 느껴져, 아니면 상실을 더 또렷하게 할까?”</p></blockquote></article>
@@ -177,7 +189,7 @@ button{font:inherit;min-height:44px;padding:.4rem .75rem;color:var(--ink);backgr
 <details open><summary>“불편하거나 정치적인 작품도 좋아해야 할까?”</summary><p>좋아할 의무는 없습니다. 불편함이 어디서 오는지 살피되 작품의 주장과 표현 방식을 따로 평가할 수 있습니다. 좋은 주제라는 이유만으로 좋은 작품이 되지는 않습니다. 반대로 불편하다는 이유만으로 성취가 사라지는 것도 아닙니다.</p></details>
 </section>
 <section id="sources"><h2>출처와 읽는 범위</h2>
-<p class="note">미술관과 작가 재단의 공개 자료를 바탕으로 재서술했습니다. 아래 링크는 원문과 작품 이미지를 확인하는 곳입니다. 감상 질문과 예시 대화는 직접 구성했으며 작품의 공식 해설과 구분했습니다. 작품 이미지는 이 페이지에 복제하지 않았습니다.</p>
+<p class="note">미술관과 작가 재단의 공개 자료를 바탕으로 재서술했습니다. 아래 링크는 원문과 작품 이미지를 확인하는 곳입니다. 감상 질문과 예시 대화는 직접 구성했으며 작품의 공식 해설과 구분했습니다. 사진별 촬영자와 출처는 각 이미지 아래에 표시했습니다. 사진은 화면용 WebP로 변환했으며 내용을 새로 자르거나 합성하지 않았습니다.</p>
 <ol class="sources">
 <li id="s1"><a href="https://www.moma.org/collection/terms/contemporary-art">MoMA, Contemporary art</a> — 동시대미술의 범위와 다양한 실천.</li>
 <li id="s2"><a href="https://www.moma.org/momaorg/shared/flattened_pages/moma_learning/glossary/">MoMA Learning, Glossary of Art Terms</a> — 추상, 설치, 장소특정성, 차용, 제도비판 등의 입문 정의.</li>

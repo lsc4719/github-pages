@@ -1,0 +1,62 @@
+{
+  "notes": "Photographs downloaded from the linked sources and converted to WebP for display. No new cropping or compositing. Dates identify the depicted work separately from the photograph. CC licenses apply to the photographs as stated by their source; the MoMA image retains its copyright credit and is used as a low-resolution illustration accompanying educational commentary, not under a Creative Commons license.",
+  "images": [
+    {
+      "id": "work-duchamp",
+      "file": "fountain.webp",
+      "width": 960,
+      "height": 1012,
+      "alt": "R. Mutt 1917 서명이 있는 소변기를 받침 위에 놓은 〈샘〉의 흑백 기록 사진",
+      "caption": "마르셀 뒤샹, 〈샘〉, 1917. Alfred Stieglitz가 촬영한 당시 기록 사진입니다. 원작은 소실되었습니다.",
+      "credit": "사진 Alfred Stieglitz · 미국 퍼블릭 도메인",
+      "source": "https://commons.wikimedia.org/wiki/File:Duchamp_Fountaine.jpg",
+      "license": "https://commons.wikimedia.org/wiki/File:Duchamp_Fountaine.jpg#Licensing",
+      "portrait": true
+    },
+    {
+      "id": "work-kosuth",
+      "file": "one-and-three-chairs.webp",
+      "width": 960,
+      "height": 621,
+      "alt": "벽 왼쪽의 의자 사진, 가운데 놓인 실제 의자, 오른쪽의 사전적 정의가 함께 설치된 모습",
+      "caption": "조지프 코수스, 〈하나이자 세 개의 의자〉, 1965. 전시 설치 사진으로, 2010년에 촬영했습니다.",
+      "credit": "사진 Gautier Poupeau · CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:One_and_Three_Chair.jpg",
+      "license": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "id": "work-ono",
+      "file": "cut-piece.webp",
+      "width": 317,
+      "height": 395,
+      "alt": "일부가 잘린 옷을 입고 무대 바닥에 앉아 있는 오노 요코와 주변의 천 조각",
+      "caption": "오노 요코, 〈컷 피스〉, 1964 초연. 사진은 1965년 뉴욕 Carnegie Recital Hall 공연의 기록입니다.",
+      "credit": "© Yoko Ono · 사진 Minoru Niizuma · MoMA Learning",
+      "source": "https://www.moma.org/momaorg/shared/flattened_pages/moma_learning/yoko-ono-cut-piece-1964/",
+      "reuse": "https://www.moma.org/about/about-this-site/#terms-of-use",
+      "portrait": true
+    },
+    {
+      "id": "work-paik",
+      "file": "tv-buddha.webp",
+      "width": 960,
+      "height": 720,
+      "alt": "불상이 마주한 TV에 자신의 모습이 보이고 뒤쪽 카메라가 불상을 촬영하는 설치",
+      "caption": "백남준, 〈TV 부처〉 연작의 전시 모습. 사진은 2009년 촬영이며, 연작의 시작은 1974년입니다.",
+      "credit": "사진 Angus Fraser · CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:TV_Buddha.jpg",
+      "license": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    {
+      "id": "work-ross",
+      "file": "portrait-of-ross.webp",
+      "width": 960,
+      "height": 722,
+      "alt": "전시장 구석에 쌓인 색색의 포장 사탕 더미에서 한 관객이 사탕을 집어 가는 모습",
+      "caption": "펠릭스 곤살레스토레스, 〈무제〉(로스의 초상, L.A.), 1991. 관객이 사탕을 가져가는 장면으로, 2013년에 촬영했습니다.",
+      "credit": "사진 Mark Mauno · CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:%22Untitled%22_(Portrait_of_Ross_in_L.A.)_by_Felix_Gonzalez-Torres.jpg",
+      "license": "https://creativecommons.org/licenses/by/2.0/"
+    }
+  ]
+}
