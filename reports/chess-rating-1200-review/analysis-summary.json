@@ -1,0 +1,773 @@
+{
+  "observed_date_kst": "2026-11-27",
+  "latest_game_kst": "2026-11-27T00:38:35+09:00",
+  "source": "https://api.chess.com/pub/player/lsc4719/games/2026/11",
+  "filter": "rated=true, rules=chess, time_class=rapid; end_time ascending",
+  "time_control": "600",
+  "scope": "November UTC archive; dates displayed in KST; not a complete KST calendar month",
+  "month": {
+    "n": 480,
+    "win": 242,
+    "draw": 26,
+    "loss": 212,
+    "first_post_game_rating": 976,
+    "last": 1206,
+    "min": 923,
+    "timeout_losses": 29
+  },
+  "recent_baseline": {
+    "end_time": 1795351957,
+    "rating": 1103,
+    "url": "https://www.chess.com/game/live/187762970014"
+  },
+  "days_columns": [
+    "day_kst",
+    "games",
+    "wins",
+    "draws",
+    "last_rating"
+  ],
+  "days": [
+    [
+      1,
+      14,
+      7,
+      0,
+      968
+    ],
+    [
+      2,
+      22,
+      9,
+      3,
+      960
+    ],
+    [
+      3,
+      4,
+      3,
+      0,
+      976
+    ],
+    [
+      4,
+      27,
+      11,
+      0,
+      936
+    ],
+    [
+      5,
+      8,
+      5,
+      2,
+      970
+    ],
+    [
+      6,
+      32,
+      15,
+      2,
+      972
+    ],
+    [
+      7,
+      54,
+      25,
+      3,
+      959
+    ],
+    [
+      8,
+      46,
+      23,
+      4,
+      996
+    ],
+    [
+      9,
+      7,
+      6,
+      0,
+      1036
+    ],
+    [
+      10,
+      14,
+      7,
+      1,
+      1044
+    ],
+    [
+      11,
+      28,
+      11,
+      3,
+      1018
+    ],
+    [
+      12,
+      16,
+      7,
+      0,
+      1000
+    ],
+    [
+      14,
+      38,
+      19,
+      0,
+      1000
+    ],
+    [
+      15,
+      21,
+      8,
+      1,
+      967
+    ],
+    [
+      16,
+      15,
+      10,
+      0,
+      1008
+    ],
+    [
+      17,
+      5,
+      2,
+      0,
+      998
+    ],
+    [
+      18,
+      20,
+      9,
+      1,
+      987
+    ],
+    [
+      19,
+      8,
+      5,
+      0,
+      1003
+    ],
+    [
+      20,
+      12,
+      7,
+      0,
+      1021
+    ],
+    [
+      21,
+      20,
+      10,
+      5,
+      1063
+    ],
+    [
+      22,
+      22,
+      13,
+      1,
+      1103
+    ],
+    [
+      23,
+      6,
+      3,
+      0,
+      1104
+    ],
+    [
+      25,
+      12,
+      9,
+      0,
+      1151
+    ],
+    [
+      26,
+      27,
+      16,
+      0,
+      1190
+    ],
+    [
+      27,
+      2,
+      2,
+      0,
+      1206
+    ]
+  ],
+  "recent": [
+    {
+      "end_time": 1795440840,
+      "date": "2026-11-23T22:34:00+09:00",
+      "rating": 1096,
+      "change": -7,
+      "color": "w",
+      "result": "resigned",
+      "opponent": "razrazking1",
+      "opponent_rating": 1133,
+      "url": "https://www.chess.com/game/live/187836110914",
+      "eco": "B21"
+    },
+    {
+      "end_time": 1795441411,
+      "date": "2026-11-23T22:43:31+09:00",
+      "rating": 1104,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "vishudwi",
+      "opponent_rating": 1107,
+      "url": "https://www.chess.com/game/live/187836995512",
+      "eco": "C20"
+    },
+    {
+      "end_time": 1795441865,
+      "date": "2026-11-23T22:51:05+09:00",
+      "rating": 1112,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "Jaro131313",
+      "opponent_rating": 1085,
+      "url": "https://www.chess.com/game/live/187837617788",
+      "eco": "B00"
+    },
+    {
+      "end_time": 1795442854,
+      "date": "2026-11-23T23:07:34+09:00",
+      "rating": 1104,
+      "change": -8,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "HenrikAndersen66",
+      "opponent_rating": 1141,
+      "url": "https://www.chess.com/game/live/187838467384",
+      "eco": "D07"
+    },
+    {
+      "end_time": 1795443809,
+      "date": "2026-11-23T23:23:29+09:00",
+      "rating": 1112,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "Alfir12",
+      "opponent_rating": 1102,
+      "url": "https://www.chess.com/game/live/187839183900",
+      "eco": "C53"
+    },
+    {
+      "end_time": 1795444252,
+      "date": "2026-11-23T23:30:52+09:00",
+      "rating": 1104,
+      "change": -8,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "latty_larry",
+      "opponent_rating": 1123,
+      "url": "https://www.chess.com/game/live/187840229918",
+      "eco": "C48"
+    },
+    {
+      "end_time": 1795611868,
+      "date": "2026-11-25T22:04:28+09:00",
+      "rating": 1097,
+      "change": -7,
+      "color": "w",
+      "result": "resigned",
+      "opponent": "farheen91",
+      "opponent_rating": 1134,
+      "url": "https://www.chess.com/game/live/187984760636",
+      "eco": "C00"
+    },
+    {
+      "end_time": 1795612176,
+      "date": "2026-11-25T22:09:36+09:00",
+      "rating": 1105,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "Bonifatius1972",
+      "opponent_rating": 1083,
+      "url": "https://www.chess.com/game/live/187985794178",
+      "eco": "C44"
+    },
+    {
+      "end_time": 1795612872,
+      "date": "2026-11-25T22:21:12+09:00",
+      "rating": 1113,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "ANDAMA-CONRAD",
+      "opponent_rating": 1092,
+      "url": "https://www.chess.com/game/live/187986109182",
+      "eco": "D00"
+    },
+    {
+      "end_time": 1795613668,
+      "date": "2026-11-25T22:34:28+09:00",
+      "rating": 1120,
+      "change": 7,
+      "color": "b",
+      "result": "win",
+      "opponent": "BottomG112",
+      "opponent_rating": 1080,
+      "url": "https://www.chess.com/game/live/187986864886",
+      "eco": "C28"
+    },
+    {
+      "end_time": 1795614830,
+      "date": "2026-11-25T22:53:50+09:00",
+      "rating": 1112,
+      "change": -8,
+      "color": "w",
+      "result": "resigned",
+      "opponent": "rabarbar6",
+      "opponent_rating": 1145,
+      "url": "https://www.chess.com/game/live/187987733384",
+      "eco": "C55"
+    },
+    {
+      "end_time": 1795615331,
+      "date": "2026-11-25T23:02:11+09:00",
+      "rating": 1120,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "jackmoore448",
+      "opponent_rating": 1113,
+      "url": "https://www.chess.com/game/live/187989023636",
+      "eco": "C50"
+    },
+    {
+      "end_time": 1795615904,
+      "date": "2026-11-25T23:11:44+09:00",
+      "rating": 1128,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "Danishakht",
+      "opponent_rating": 1115,
+      "url": "https://www.chess.com/game/live/187989579298",
+      "eco": "C50"
+    },
+    {
+      "end_time": 1795616536,
+      "date": "2026-11-25T23:22:16+09:00",
+      "rating": 1120,
+      "change": -8,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "Ajay_yajA",
+      "opponent_rating": 1131,
+      "url": "https://www.chess.com/game/live/187990216566",
+      "eco": "D20"
+    },
+    {
+      "end_time": 1795616884,
+      "date": "2026-11-25T23:28:04+09:00",
+      "rating": 1128,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "milalek",
+      "opponent_rating": 1095,
+      "url": "https://www.chess.com/game/live/187990926238",
+      "eco": "B30"
+    },
+    {
+      "end_time": 1795617006,
+      "date": "2026-11-25T23:30:06+09:00",
+      "rating": 1136,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "flintt15",
+      "opponent_rating": 1137,
+      "url": "https://www.chess.com/game/live/187991318924",
+      "eco": "B30"
+    },
+    {
+      "end_time": 1795618054,
+      "date": "2026-11-25T23:47:34+09:00",
+      "rating": 1143,
+      "change": 7,
+      "color": "w",
+      "result": "win",
+      "opponent": "KUMAR_0908",
+      "opponent_rating": 1105,
+      "url": "https://www.chess.com/game/live/187991458826",
+      "eco": "C50"
+    },
+    {
+      "end_time": 1795618582,
+      "date": "2026-11-25T23:56:22+09:00",
+      "rating": 1151,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "markoyoma",
+      "opponent_rating": 1136,
+      "url": "https://www.chess.com/game/live/187992649618",
+      "eco": "A00"
+    },
+    {
+      "end_time": 1795619605,
+      "date": "2026-11-26T00:13:25+09:00",
+      "rating": 1144,
+      "change": -7,
+      "color": "b",
+      "result": "timeout",
+      "opponent": "Elprofeivatri",
+      "opponent_rating": 1183,
+      "url": "https://www.chess.com/game/live/187993257272",
+      "eco": "C62"
+    },
+    {
+      "end_time": 1795621362,
+      "date": "2026-11-26T00:42:42+09:00",
+      "rating": 1152,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "yorkshirelad3927",
+      "opponent_rating": 1137,
+      "url": "https://www.chess.com/game/live/187996113768",
+      "eco": "C41"
+    },
+    {
+      "end_time": 1795623355,
+      "date": "2026-11-26T01:15:55+09:00",
+      "rating": 1160,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "Vic45Jean",
+      "opponent_rating": 1129,
+      "url": "https://www.chess.com/game/live/187998286728",
+      "eco": "C45"
+    },
+    {
+      "end_time": 1795624029,
+      "date": "2026-11-26T01:27:09+09:00",
+      "rating": 1152,
+      "change": -8,
+      "color": "w",
+      "result": "resigned",
+      "opponent": "Kabir6927",
+      "opponent_rating": 1185,
+      "url": "https://www.chess.com/game/live/187998827510",
+      "eco": "C50"
+    },
+    {
+      "end_time": 1795624616,
+      "date": "2026-11-26T01:36:56+09:00",
+      "rating": 1144,
+      "change": -8,
+      "color": "w",
+      "result": "resigned",
+      "opponent": "okifonseca",
+      "opponent_rating": 1166,
+      "url": "https://www.chess.com/game/live/187999631798",
+      "eco": "B07"
+    },
+    {
+      "end_time": 1795690425,
+      "date": "2026-11-26T19:53:45+09:00",
+      "rating": 1152,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "hoxryx",
+      "opponent_rating": 1092,
+      "url": "https://www.chess.com/game/live/188053329102",
+      "eco": "C48"
+    },
+    {
+      "end_time": 1795691061,
+      "date": "2026-11-26T20:04:21+09:00",
+      "rating": 1160,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "plam4o123",
+      "opponent_rating": 1127,
+      "url": "https://www.chess.com/game/live/188053587144",
+      "eco": "E04"
+    },
+    {
+      "end_time": 1795691151,
+      "date": "2026-11-26T20:05:51+09:00",
+      "rating": 1168,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "Ali-Mohamed-208",
+      "opponent_rating": 1167,
+      "url": "https://www.chess.com/game/live/188054179706",
+      "eco": "C53"
+    },
+    {
+      "end_time": 1795691390,
+      "date": "2026-11-26T20:09:50+09:00",
+      "rating": 1160,
+      "change": -8,
+      "color": "w",
+      "result": "resigned",
+      "opponent": "Ngenzi88",
+      "opponent_rating": 1173,
+      "url": "https://www.chess.com/game/live/188054263206",
+      "eco": "C50"
+    },
+    {
+      "end_time": 1795692008,
+      "date": "2026-11-26T20:20:08+09:00",
+      "rating": 1152,
+      "change": -8,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "balo2o2o",
+      "opponent_rating": 1180,
+      "url": "https://www.chess.com/game/live/188054487308",
+      "eco": "A00"
+    },
+    {
+      "end_time": 1795693053,
+      "date": "2026-11-26T20:37:33+09:00",
+      "rating": 1160,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "jam0479",
+      "opponent_rating": 1152,
+      "url": "https://www.chess.com/game/live/188055075962",
+      "eco": "B07"
+    },
+    {
+      "end_time": 1795694417,
+      "date": "2026-11-26T21:00:17+09:00",
+      "rating": 1168,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "oplimment",
+      "opponent_rating": 1156,
+      "url": "https://www.chess.com/game/live/188057426180",
+      "eco": "C44"
+    },
+    {
+      "end_time": 1795694695,
+      "date": "2026-11-26T21:04:55+09:00",
+      "rating": 1159,
+      "change": -9,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "Ongsa519",
+      "opponent_rating": 1154,
+      "url": "https://www.chess.com/game/live/188057444088",
+      "eco": "D20"
+    },
+    {
+      "end_time": 1795695563,
+      "date": "2026-11-26T21:19:23+09:00",
+      "rating": 1167,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "Darkrider_964",
+      "opponent_rating": 1153,
+      "url": "https://www.chess.com/game/live/188057721566",
+      "eco": "B21"
+    },
+    {
+      "end_time": 1795696327,
+      "date": "2026-11-26T21:32:07+09:00",
+      "rating": 1175,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "JarJar737",
+      "opponent_rating": 1144,
+      "url": "https://www.chess.com/game/live/188058723472",
+      "eco": "C01"
+    },
+    {
+      "end_time": 1795697033,
+      "date": "2026-11-26T21:43:53+09:00",
+      "rating": 1182,
+      "change": 7,
+      "color": "w",
+      "result": "win",
+      "opponent": "surrenderingV",
+      "opponent_rating": 1145,
+      "url": "https://www.chess.com/game/live/188059387830",
+      "eco": "B07"
+    },
+    {
+      "end_time": 1795697614,
+      "date": "2026-11-26T21:53:34+09:00",
+      "rating": 1173,
+      "change": -9,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "scz40",
+      "opponent_rating": 1168,
+      "url": "https://www.chess.com/game/live/188060125968",
+      "eco": "A00"
+    },
+    {
+      "end_time": 1795698368,
+      "date": "2026-11-26T22:06:08+09:00",
+      "rating": 1165,
+      "change": -8,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "Yahia7k",
+      "opponent_rating": 1199,
+      "url": "https://www.chess.com/game/live/188060738662",
+      "eco": "A28"
+    },
+    {
+      "end_time": 1795698786,
+      "date": "2026-11-26T22:13:06+09:00",
+      "rating": 1157,
+      "change": -8,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "Chanel_Nine",
+      "opponent_rating": 1194,
+      "url": "https://www.chess.com/game/live/188061535736",
+      "eco": "C22"
+    },
+    {
+      "end_time": 1795699170,
+      "date": "2026-11-26T22:19:30+09:00",
+      "rating": 1165,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "N4N01313",
+      "opponent_rating": 1157,
+      "url": "https://www.chess.com/game/live/188061981786",
+      "eco": "C55"
+    },
+    {
+      "end_time": 1795699330,
+      "date": "2026-11-26T22:22:10+09:00",
+      "rating": 1173,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "iama_chessmaster",
+      "opponent_rating": 1137,
+      "url": "https://www.chess.com/game/live/188062397628",
+      "eco": "A00"
+    },
+    {
+      "end_time": 1795699782,
+      "date": "2026-11-26T22:29:42+09:00",
+      "rating": 1181,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "ctym101",
+      "opponent_rating": 1185,
+      "url": "https://www.chess.com/game/live/188062570530",
+      "eco": "C55"
+    },
+    {
+      "end_time": 1795700588,
+      "date": "2026-11-26T22:43:08+09:00",
+      "rating": 1173,
+      "change": -8,
+      "color": "w",
+      "result": "checkmated",
+      "opponent": "saeed3002",
+      "opponent_rating": 1171,
+      "url": "https://www.chess.com/game/live/188063062708",
+      "eco": "B00"
+    },
+    {
+      "end_time": 1795701365,
+      "date": "2026-11-26T22:56:05+09:00",
+      "rating": 1182,
+      "change": 9,
+      "color": "b",
+      "result": "win",
+      "opponent": "mortyjessica",
+      "opponent_rating": 1188,
+      "url": "https://www.chess.com/game/live/188063955632",
+      "eco": "C34"
+    },
+    {
+      "end_time": 1795701996,
+      "date": "2026-11-26T23:06:36+09:00",
+      "rating": 1190,
+      "change": 8,
+      "color": "b",
+      "result": "win",
+      "opponent": "Ivanoid1224",
+      "opponent_rating": 1176,
+      "url": "https://www.chess.com/game/live/188064821962",
+      "eco": "D02"
+    },
+    {
+      "end_time": 1795702646,
+      "date": "2026-11-26T23:17:26+09:00",
+      "rating": 1198,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "PhysicalGlove",
+      "opponent_rating": 1192,
+      "url": "https://www.chess.com/game/live/188065547094",
+      "eco": "C50"
+    },
+    {
+      "end_time": 1795703453,
+      "date": "2026-11-26T23:30:53+09:00",
+      "rating": 1190,
+      "change": -8,
+      "color": "b",
+      "result": "resigned",
+      "opponent": "Horky7",
+      "opponent_rating": 1199,
+      "url": "https://www.chess.com/game/live/188066247948",
+      "eco": "C50"
+    },
+    {
+      "end_time": 1795706664,
+      "date": "2026-11-27T00:24:24+09:00",
+      "rating": 1198,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "bradetic1",
+      "opponent_rating": 1172,
+      "url": "https://www.chess.com/game/live/188069890664",
+      "eco": "C41"
+    },
+    {
+      "end_time": 1795707515,
+      "date": "2026-11-27T00:38:35+09:00",
+      "rating": 1206,
+      "change": 8,
+      "color": "w",
+      "result": "win",
+      "opponent": "CB25001",
+      "opponent_rating": 1198,
+      "url": "https://www.chess.com/game/live/188070827678",
+      "eco": "C50"
+    }
+  ]
+}

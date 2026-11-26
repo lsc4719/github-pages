@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "chess-rating-1200-review",
+      "title": "lsc4719 — 1206 달성, 상승의 근거와 남은 실수",
+      "summary": "1103→1206(+103), 추가 47국 30승·17패. 최근 20국의 백·흑 격차와 실전 5장면으로 살펴본 1200대 유지 과제.",
+      "date": "2026-11-27",
+      "path": "./reports/chess-rating-1200-review/"
+    },
+    {
       "slug": "seungkeon543-rapid-review",
       "title": "seungkeon543 — 1300대 안착을 위한 대국 분석",
       "summary": "래피드 156국 현황과 최근 40국 Stockfish 19 분석. 실전 6장면의 체스판·개선 수순, 흑의 과제와 4주 연습 계획.",
