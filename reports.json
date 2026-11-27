@@ -1,6 +1,20 @@
 {
   "reports": [
     {
+      "slug": "modern-art-deep-reading-01",
+      "title": "현대미술 깊이 읽기 01 — 입문에서 만난 다섯 작품",
+      "summary": "뒤샹·코수스·오노 요코·백남준·곤살레스토레스: 제작 배경, 예술사적 의미, 해석의 쟁점을 작품별로 깊이 읽습니다.",
+      "date": "2026-11-27",
+      "path": "./reports/modern-art-deep-reading-01/"
+    },
+    {
+      "slug": "modern-art-deep-reading-02",
+      "title": "현대미술 깊이 읽기 02 — 현대미술사의 다섯 전환점",
+      "summary": "피카소·폴록·워홀·스미스슨·신디 셔먼: 공간·몸짓·복제·장소·정체성이 미술의 질문을 바꾼 방식.",
+      "date": "2026-11-27",
+      "path": "./reports/modern-art-deep-reading-02/"
+    },
+    {
       "slug": "azt-chess-visit",
       "title": "lsc4719, 아지트체스에 가면 어떨까",
       "summary": "래피드 1206의 실전 과제로 본 방문 적합성, 성인 수업·자유 대국 조건과 체험 전 확인할 질문.",
