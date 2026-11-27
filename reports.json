@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "slug": "azt-chess-visit",
+      "title": "lsc4719, 아지트체스에 가면 어떨까",
+      "summary": "래피드 1206의 실전 과제로 본 방문 적합성, 성인 수업·자유 대국 조건과 체험 전 확인할 질문.",
+      "date": "2026-11-27",
+      "path": "./reports/azt-chess-visit/"
+    },
+    {
       "slug": "chess-rating-1200-review",
       "title": "lsc4719 — 다음 대국에서 고칠 세 가지",
       "summary": "실전 체스판에서 룩 방치, 성급한 공격, 되잡기 착각을 확인하고 개선 수와 비교합니다.",
